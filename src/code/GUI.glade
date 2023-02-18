@@ -1,0 +1,1818 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated with glade 3.38.2 -->
+<interface>
+  <requires lib="gtk+" version="3.24"/>
+  <object class="GtkWindow" id="Ventana">
+    <property name="can-focus">False</property>
+    <property name="resizable">False</property>
+    <child>
+      <object class="GtkFixed" id="Plano">
+        <property name="visible">True</property>
+        <property name="can-focus">False</property>
+        <child>
+          <object class="GtkMenuBar" id="Menu">
+            <property name="width-request">800</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <child>
+              <object class="GtkMenuItem">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="label" translatable="yes">_File</property>
+                <property name="use-underline">True</property>
+                <child type="submenu">
+                  <object class="GtkMenu">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <child>
+                      <object class="GtkImageMenuItem">
+                        <property name="label">gtk-new</property>
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="use-underline">True</property>
+                        <property name="use-stock">True</property>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="GtkImageMenuItem">
+                        <property name="label">gtk-open</property>
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="use-underline">True</property>
+                        <property name="use-stock">True</property>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="GtkImageMenuItem">
+                        <property name="label">gtk-save</property>
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="use-underline">True</property>
+                        <property name="use-stock">True</property>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="GtkImageMenuItem">
+                        <property name="label">gtk-save-as</property>
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="use-underline">True</property>
+                        <property name="use-stock">True</property>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="GtkSeparatorMenuItem">
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="GtkImageMenuItem">
+                        <property name="label">gtk-quit</property>
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="use-underline">True</property>
+                        <property name="use-stock">True</property>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+              </object>
+            </child>
+            <child>
+              <object class="GtkMenuItem">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="label" translatable="yes">_Edit</property>
+                <property name="use-underline">True</property>
+                <child type="submenu">
+                  <object class="GtkMenu">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <child>
+                      <object class="GtkImageMenuItem">
+                        <property name="label">gtk-cut</property>
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="use-underline">True</property>
+                        <property name="use-stock">True</property>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="GtkImageMenuItem">
+                        <property name="label">gtk-copy</property>
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="use-underline">True</property>
+                        <property name="use-stock">True</property>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="GtkImageMenuItem">
+                        <property name="label">gtk-paste</property>
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="use-underline">True</property>
+                        <property name="use-stock">True</property>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="GtkImageMenuItem">
+                        <property name="label">gtk-delete</property>
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="use-underline">True</property>
+                        <property name="use-stock">True</property>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+              </object>
+            </child>
+            <child>
+              <object class="GtkMenuItem">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="label" translatable="yes">_View</property>
+                <property name="use-underline">True</property>
+              </object>
+            </child>
+            <child>
+              <object class="GtkMenuItem">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="label" translatable="yes">_Help</property>
+                <property name="use-underline">True</property>
+                <child type="submenu">
+                  <object class="GtkMenu">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <child>
+                      <object class="GtkImageMenuItem">
+                        <property name="label">gtk-about</property>
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="use-underline">True</property>
+                        <property name="use-stock">True</property>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="GtkLabel">
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label" translatable="yes">ID Jugador:</property>
+          </object>
+          <packing>
+            <property name="x">203</property>
+            <property name="y">53</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="Entrada_ID">
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="tooltip-text" translatable="yes">Ingrese el ID del Jugador</property>
+          </object>
+          <packing>
+            <property name="x">300</property>
+            <property name="y">43</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="Agregar">
+            <property name="label" translatable="yes">Agregar</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+          </object>
+          <packing>
+            <property name="x">500</property>
+            <property name="y">43</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkFrame" id="Frame1">
+            <property name="width-request">100</property>
+            <property name="height-request">100</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label-xalign">0</property>
+            <property name="shadow-type">none</property>
+            <child>
+              <object class="GtkAlignment">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="left-padding">12</property>
+                <child>
+                  <placeholder/>
+                </child>
+              </object>
+            </child>
+            <child type="label">
+              <object class="GtkLabel">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <attributes>
+                  <attribute name="foreground" value="#6262a0a0eaea"/>
+                </attributes>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="y">100</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkFrame" id="Frame2">
+            <property name="width-request">100</property>
+            <property name="height-request">100</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label-xalign">0</property>
+            <property name="shadow-type">none</property>
+            <child>
+              <object class="GtkAlignment">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="left-padding">12</property>
+                <child>
+                  <placeholder/>
+                </child>
+              </object>
+            </child>
+            <child type="label">
+              <object class="GtkLabel">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <attributes>
+                  <attribute name="foreground" value="#6262a0a0eaea"/>
+                </attributes>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="x">100</property>
+            <property name="y">100</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkFrame" id="Frame3">
+            <property name="width-request">100</property>
+            <property name="height-request">100</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label-xalign">0</property>
+            <property name="shadow-type">none</property>
+            <child>
+              <object class="GtkAlignment">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="left-padding">12</property>
+                <child>
+                  <placeholder/>
+                </child>
+              </object>
+            </child>
+            <child type="label">
+              <object class="GtkLabel">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <attributes>
+                  <attribute name="foreground" value="#6262a0a0eaea"/>
+                </attributes>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="x">200</property>
+            <property name="y">100</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkFrame" id="Frame4">
+            <property name="width-request">100</property>
+            <property name="height-request">100</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label-xalign">0</property>
+            <property name="shadow-type">none</property>
+            <child>
+              <object class="GtkAlignment">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="left-padding">12</property>
+                <child>
+                  <placeholder/>
+                </child>
+              </object>
+            </child>
+            <child type="label">
+              <object class="GtkLabel">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <attributes>
+                  <attribute name="foreground" value="#6262a0a0eaea"/>
+                </attributes>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="x">300</property>
+            <property name="y">100</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkFrame" id="Frame5">
+            <property name="width-request">100</property>
+            <property name="height-request">100</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label-xalign">0</property>
+            <property name="shadow-type">none</property>
+            <child>
+              <object class="GtkAlignment">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="left-padding">12</property>
+                <child>
+                  <placeholder/>
+                </child>
+              </object>
+            </child>
+            <child type="label">
+              <object class="GtkLabel">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <attributes>
+                  <attribute name="foreground" value="#6262a0a0eaea"/>
+                </attributes>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="x">400</property>
+            <property name="y">100</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkFrame" id="Frame6">
+            <property name="width-request">100</property>
+            <property name="height-request">100</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label-xalign">0</property>
+            <property name="shadow-type">none</property>
+            <child>
+              <object class="GtkAlignment">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="left-padding">12</property>
+                <child>
+                  <placeholder/>
+                </child>
+              </object>
+            </child>
+            <child type="label">
+              <object class="GtkLabel">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <attributes>
+                  <attribute name="foreground" value="#6262a0a0eaea"/>
+                </attributes>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="x">500</property>
+            <property name="y">100</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkFrame" id="Frame7">
+            <property name="width-request">100</property>
+            <property name="height-request">100</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label-xalign">0</property>
+            <property name="shadow-type">none</property>
+            <child>
+              <object class="GtkAlignment">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="left-padding">12</property>
+                <child>
+                  <placeholder/>
+                </child>
+              </object>
+            </child>
+            <child type="label">
+              <object class="GtkLabel">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <attributes>
+                  <attribute name="foreground" value="#6262a0a0eaea"/>
+                </attributes>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="x">600</property>
+            <property name="y">100</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkFrame" id="Frame8">
+            <property name="width-request">100</property>
+            <property name="height-request">100</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label-xalign">0</property>
+            <property name="shadow-type">none</property>
+            <child>
+              <object class="GtkAlignment">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="left-padding">12</property>
+                <child>
+                  <placeholder/>
+                </child>
+              </object>
+            </child>
+            <child type="label">
+              <object class="GtkLabel">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <attributes>
+                  <attribute name="foreground" value="#6262a0a0eaea"/>
+                </attributes>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="x">700</property>
+            <property name="y">100</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkFrame" id="Frame9">
+            <property name="width-request">100</property>
+            <property name="height-request">100</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label-xalign">0</property>
+            <property name="shadow-type">none</property>
+            <child>
+              <object class="GtkAlignment">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="left-padding">12</property>
+                <child>
+                  <placeholder/>
+                </child>
+              </object>
+            </child>
+            <child type="label">
+              <object class="GtkLabel">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <attributes>
+                  <attribute name="foreground" value="#6262a0a0eaea"/>
+                </attributes>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="x">700</property>
+            <property name="y">200</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkFrame" id="Frame10">
+            <property name="width-request">100</property>
+            <property name="height-request">100</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label-xalign">0</property>
+            <property name="shadow-type">none</property>
+            <child>
+              <object class="GtkAlignment">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="left-padding">12</property>
+                <child>
+                  <placeholder/>
+                </child>
+              </object>
+            </child>
+            <child type="label">
+              <object class="GtkLabel">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <attributes>
+                  <attribute name="foreground" value="#6262a0a0eaea"/>
+                </attributes>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="x">700</property>
+            <property name="y">300</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkFrame" id="Frame11">
+            <property name="width-request">100</property>
+            <property name="height-request">100</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label-xalign">0</property>
+            <property name="shadow-type">none</property>
+            <child>
+              <object class="GtkAlignment">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="left-padding">12</property>
+                <child>
+                  <placeholder/>
+                </child>
+              </object>
+            </child>
+            <child type="label">
+              <object class="GtkLabel">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <attributes>
+                  <attribute name="foreground" value="#6262a0a0eaea"/>
+                </attributes>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="x">700</property>
+            <property name="y">400</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkFrame" id="Frame12">
+            <property name="width-request">100</property>
+            <property name="height-request">100</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label-xalign">0</property>
+            <property name="shadow-type">none</property>
+            <child>
+              <object class="GtkAlignment">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="left-padding">12</property>
+                <child>
+                  <placeholder/>
+                </child>
+              </object>
+            </child>
+            <child type="label">
+              <object class="GtkLabel">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <attributes>
+                  <attribute name="foreground" value="#6262a0a0eaea"/>
+                </attributes>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="x">700</property>
+            <property name="y">500</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkFrame" id="Frame13">
+            <property name="width-request">100</property>
+            <property name="height-request">100</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label-xalign">0</property>
+            <property name="shadow-type">none</property>
+            <child>
+              <object class="GtkAlignment">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="left-padding">12</property>
+                <child>
+                  <placeholder/>
+                </child>
+              </object>
+            </child>
+            <child type="label">
+              <object class="GtkLabel">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <attributes>
+                  <attribute name="foreground" value="#6262a0a0eaea"/>
+                </attributes>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="x">700</property>
+            <property name="y">600</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkFrame" id="Frame14">
+            <property name="width-request">100</property>
+            <property name="height-request">100</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label-xalign">0</property>
+            <property name="shadow-type">none</property>
+            <child>
+              <object class="GtkAlignment">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="left-padding">12</property>
+                <child>
+                  <placeholder/>
+                </child>
+              </object>
+            </child>
+            <child type="label">
+              <object class="GtkLabel">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <attributes>
+                  <attribute name="foreground" value="#6262a0a0eaea"/>
+                </attributes>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="x">600</property>
+            <property name="y">600</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkFrame" id="Frame15">
+            <property name="width-request">100</property>
+            <property name="height-request">100</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label-xalign">0</property>
+            <property name="shadow-type">none</property>
+            <child>
+              <object class="GtkAlignment">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="left-padding">12</property>
+                <child>
+                  <placeholder/>
+                </child>
+              </object>
+            </child>
+            <child type="label">
+              <object class="GtkLabel">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <attributes>
+                  <attribute name="foreground" value="#6262a0a0eaea"/>
+                </attributes>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="x">500</property>
+            <property name="y">600</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkFrame" id="Frame16">
+            <property name="width-request">100</property>
+            <property name="height-request">100</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label-xalign">0</property>
+            <property name="shadow-type">none</property>
+            <child>
+              <object class="GtkAlignment">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="left-padding">12</property>
+                <child>
+                  <placeholder/>
+                </child>
+              </object>
+            </child>
+            <child type="label">
+              <object class="GtkLabel">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <attributes>
+                  <attribute name="foreground" value="#6262a0a0eaea"/>
+                </attributes>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="x">400</property>
+            <property name="y">600</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkFrame" id="Frame17">
+            <property name="width-request">100</property>
+            <property name="height-request">100</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label-xalign">0</property>
+            <property name="shadow-type">none</property>
+            <child>
+              <object class="GtkAlignment">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="left-padding">12</property>
+                <child>
+                  <placeholder/>
+                </child>
+              </object>
+            </child>
+            <child type="label">
+              <object class="GtkLabel">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <attributes>
+                  <attribute name="foreground" value="#6262a0a0eaea"/>
+                </attributes>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="x">300</property>
+            <property name="y">600</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkFrame" id="Frame18">
+            <property name="width-request">100</property>
+            <property name="height-request">100</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label-xalign">0</property>
+            <property name="shadow-type">none</property>
+            <child>
+              <object class="GtkAlignment">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="left-padding">12</property>
+                <child>
+                  <placeholder/>
+                </child>
+              </object>
+            </child>
+            <child type="label">
+              <object class="GtkLabel">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <attributes>
+                  <attribute name="foreground" value="#6262a0a0eaea"/>
+                </attributes>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="x">200</property>
+            <property name="y">600</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkFrame" id="Frame19">
+            <property name="width-request">100</property>
+            <property name="height-request">100</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label-xalign">0</property>
+            <property name="shadow-type">none</property>
+            <child>
+              <object class="GtkAlignment">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="left-padding">12</property>
+                <child>
+                  <placeholder/>
+                </child>
+              </object>
+            </child>
+            <child type="label">
+              <object class="GtkLabel">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <attributes>
+                  <attribute name="foreground" value="#6262a0a0eaea"/>
+                </attributes>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="x">100</property>
+            <property name="y">600</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkFrame" id="Frame20">
+            <property name="width-request">100</property>
+            <property name="height-request">100</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label-xalign">0</property>
+            <property name="shadow-type">none</property>
+            <child>
+              <object class="GtkAlignment">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="left-padding">12</property>
+                <child>
+                  <placeholder/>
+                </child>
+              </object>
+            </child>
+            <child type="label">
+              <object class="GtkLabel">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <attributes>
+                  <attribute name="foreground" value="#6262a0a0eaea"/>
+                </attributes>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="x">100</property>
+            <property name="y">500</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkFrame" id="Frame21">
+            <property name="width-request">100</property>
+            <property name="height-request">100</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label-xalign">0</property>
+            <property name="shadow-type">none</property>
+            <child>
+              <object class="GtkAlignment">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="left-padding">12</property>
+                <child>
+                  <placeholder/>
+                </child>
+              </object>
+            </child>
+            <child type="label">
+              <object class="GtkLabel">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <attributes>
+                  <attribute name="foreground" value="#6262a0a0eaea"/>
+                </attributes>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="x">100</property>
+            <property name="y">400</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkFrame" id="Frame22">
+            <property name="width-request">100</property>
+            <property name="height-request">100</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label-xalign">0</property>
+            <property name="shadow-type">none</property>
+            <child>
+              <object class="GtkAlignment">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="left-padding">12</property>
+                <child>
+                  <placeholder/>
+                </child>
+              </object>
+            </child>
+            <child type="label">
+              <object class="GtkLabel">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <attributes>
+                  <attribute name="foreground" value="#6262a0a0eaea"/>
+                </attributes>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="x">100</property>
+            <property name="y">300</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkFrame" id="Frame23">
+            <property name="width-request">100</property>
+            <property name="height-request">100</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label-xalign">0</property>
+            <property name="shadow-type">none</property>
+            <child>
+              <object class="GtkAlignment">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="left-padding">12</property>
+                <child>
+                  <placeholder/>
+                </child>
+              </object>
+            </child>
+            <child type="label">
+              <object class="GtkLabel">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <attributes>
+                  <attribute name="foreground" value="#6262a0a0eaea"/>
+                </attributes>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="x">100</property>
+            <property name="y">200</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkFrame" id="Frame24">
+            <property name="width-request">100</property>
+            <property name="height-request">100</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label-xalign">0</property>
+            <property name="shadow-type">none</property>
+            <child>
+              <object class="GtkAlignment">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="left-padding">12</property>
+                <child>
+                  <placeholder/>
+                </child>
+              </object>
+            </child>
+            <child type="label">
+              <object class="GtkLabel">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <attributes>
+                  <attribute name="foreground" value="#6262a0a0eaea"/>
+                </attributes>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="x">200</property>
+            <property name="y">200</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkFrame" id="Frame25">
+            <property name="width-request">100</property>
+            <property name="height-request">100</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label-xalign">0</property>
+            <property name="shadow-type">none</property>
+            <child>
+              <object class="GtkAlignment">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="left-padding">12</property>
+                <child>
+                  <placeholder/>
+                </child>
+              </object>
+            </child>
+            <child type="label">
+              <object class="GtkLabel">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <attributes>
+                  <attribute name="foreground" value="#6262a0a0eaea"/>
+                </attributes>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="x">300</property>
+            <property name="y">200</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkFrame" id="Frame26">
+            <property name="width-request">100</property>
+            <property name="height-request">100</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label-xalign">0</property>
+            <property name="shadow-type">none</property>
+            <child>
+              <object class="GtkAlignment">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="left-padding">12</property>
+                <child>
+                  <placeholder/>
+                </child>
+              </object>
+            </child>
+            <child type="label">
+              <object class="GtkLabel">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <attributes>
+                  <attribute name="foreground" value="#6262a0a0eaea"/>
+                </attributes>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="x">400</property>
+            <property name="y">200</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkFrame" id="Frame27">
+            <property name="width-request">100</property>
+            <property name="height-request">100</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label-xalign">0</property>
+            <property name="shadow-type">none</property>
+            <child>
+              <object class="GtkAlignment">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="left-padding">12</property>
+                <child>
+                  <placeholder/>
+                </child>
+              </object>
+            </child>
+            <child type="label">
+              <object class="GtkLabel">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <attributes>
+                  <attribute name="foreground" value="#6262a0a0eaea"/>
+                </attributes>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="x">500</property>
+            <property name="y">200</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkFrame" id="Frame28">
+            <property name="width-request">100</property>
+            <property name="height-request">100</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label-xalign">0</property>
+            <property name="shadow-type">none</property>
+            <child>
+              <object class="GtkAlignment">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="left-padding">12</property>
+                <child>
+                  <placeholder/>
+                </child>
+              </object>
+            </child>
+            <child type="label">
+              <object class="GtkLabel">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <attributes>
+                  <attribute name="foreground" value="#6262a0a0eaea"/>
+                </attributes>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="x">600</property>
+            <property name="y">200</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkFrame" id="Frame29">
+            <property name="width-request">100</property>
+            <property name="height-request">100</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label-xalign">0</property>
+            <property name="shadow-type">none</property>
+            <child>
+              <object class="GtkAlignment">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="left-padding">12</property>
+                <child>
+                  <placeholder/>
+                </child>
+              </object>
+            </child>
+            <child type="label">
+              <object class="GtkLabel">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <attributes>
+                  <attribute name="foreground" value="#6262a0a0eaea"/>
+                </attributes>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="x">600</property>
+            <property name="y">300</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkFrame" id="Frame30">
+            <property name="width-request">100</property>
+            <property name="height-request">100</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label-xalign">0</property>
+            <property name="shadow-type">none</property>
+            <child>
+              <object class="GtkAlignment">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="left-padding">12</property>
+                <child>
+                  <placeholder/>
+                </child>
+              </object>
+            </child>
+            <child type="label">
+              <object class="GtkLabel">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <attributes>
+                  <attribute name="foreground" value="#6262a0a0eaea"/>
+                </attributes>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="x">600</property>
+            <property name="y">400</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkFrame" id="Frame31">
+            <property name="width-request">100</property>
+            <property name="height-request">100</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label-xalign">0</property>
+            <property name="shadow-type">none</property>
+            <child>
+              <object class="GtkAlignment">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="left-padding">12</property>
+                <child>
+                  <placeholder/>
+                </child>
+              </object>
+            </child>
+            <child type="label">
+              <object class="GtkLabel">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <attributes>
+                  <attribute name="foreground" value="#6262a0a0eaea"/>
+                </attributes>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="x">600</property>
+            <property name="y">500</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkFrame" id="Frame32">
+            <property name="width-request">100</property>
+            <property name="height-request">100</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label-xalign">0</property>
+            <property name="shadow-type">none</property>
+            <child>
+              <object class="GtkAlignment">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="left-padding">12</property>
+                <child>
+                  <placeholder/>
+                </child>
+              </object>
+            </child>
+            <child type="label">
+              <object class="GtkLabel">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <attributes>
+                  <attribute name="foreground" value="#6262a0a0eaea"/>
+                </attributes>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="x">500</property>
+            <property name="y">500</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkFrame" id="Frame33">
+            <property name="width-request">100</property>
+            <property name="height-request">100</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label-xalign">0</property>
+            <property name="shadow-type">none</property>
+            <child>
+              <object class="GtkAlignment">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="left-padding">12</property>
+                <child>
+                  <placeholder/>
+                </child>
+              </object>
+            </child>
+            <child type="label">
+              <object class="GtkLabel">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <attributes>
+                  <attribute name="foreground" value="#6262a0a0eaea"/>
+                </attributes>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="x">400</property>
+            <property name="y">500</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkFrame" id="Frame34">
+            <property name="width-request">100</property>
+            <property name="height-request">100</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label-xalign">0</property>
+            <property name="shadow-type">none</property>
+            <child>
+              <object class="GtkAlignment">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="left-padding">12</property>
+                <child>
+                  <placeholder/>
+                </child>
+              </object>
+            </child>
+            <child type="label">
+              <object class="GtkLabel">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <attributes>
+                  <attribute name="foreground" value="#6262a0a0eaea"/>
+                </attributes>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="x">300</property>
+            <property name="y">500</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkFrame" id="Frame35">
+            <property name="width-request">100</property>
+            <property name="height-request">100</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label-xalign">0</property>
+            <property name="shadow-type">none</property>
+            <child>
+              <object class="GtkAlignment">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="left-padding">12</property>
+                <child>
+                  <placeholder/>
+                </child>
+              </object>
+            </child>
+            <child type="label">
+              <object class="GtkLabel">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <attributes>
+                  <attribute name="foreground" value="#6262a0a0eaea"/>
+                </attributes>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="x">200</property>
+            <property name="y">500</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkFrame" id="Frame36">
+            <property name="width-request">100</property>
+            <property name="height-request">100</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label-xalign">0</property>
+            <property name="shadow-type">none</property>
+            <child>
+              <object class="GtkAlignment">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="left-padding">12</property>
+                <child>
+                  <placeholder/>
+                </child>
+              </object>
+            </child>
+            <child type="label">
+              <object class="GtkLabel">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <attributes>
+                  <attribute name="foreground" value="#6262a0a0eaea"/>
+                </attributes>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="x">200</property>
+            <property name="y">400</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkFrame" id="Frame37">
+            <property name="width-request">100</property>
+            <property name="height-request">100</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label-xalign">0</property>
+            <property name="shadow-type">none</property>
+            <child>
+              <object class="GtkAlignment">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="left-padding">12</property>
+                <child>
+                  <placeholder/>
+                </child>
+              </object>
+            </child>
+            <child type="label">
+              <object class="GtkLabel">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <attributes>
+                  <attribute name="foreground" value="#6262a0a0eaea"/>
+                </attributes>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="x">200</property>
+            <property name="y">300</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkFrame" id="Frame38">
+            <property name="width-request">100</property>
+            <property name="height-request">50</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label-xalign">0</property>
+            <property name="shadow-type">none</property>
+            <child>
+              <object class="GtkAlignment">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="left-padding">12</property>
+                <child>
+                  <placeholder/>
+                </child>
+              </object>
+            </child>
+            <child type="label">
+              <object class="GtkLabel">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <attributes>
+                  <attribute name="foreground" value="#6262a0a0eaea"/>
+                </attributes>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="x">300</property>
+            <property name="y">300</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkFrame" id="Frame39">
+            <property name="width-request">100</property>
+            <property name="height-request">50</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label-xalign">0</property>
+            <property name="shadow-type">none</property>
+            <child>
+              <object class="GtkAlignment">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="left-padding">12</property>
+                <child>
+                  <placeholder/>
+                </child>
+              </object>
+            </child>
+            <child type="label">
+              <object class="GtkLabel">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <attributes>
+                  <attribute name="foreground" value="#6262a0a0eaea"/>
+                </attributes>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="x">400</property>
+            <property name="y">300</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkFrame" id="Frame40">
+            <property name="width-request">100</property>
+            <property name="height-request">50</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label-xalign">0</property>
+            <property name="shadow-type">none</property>
+            <child>
+              <object class="GtkAlignment">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="left-padding">12</property>
+                <child>
+                  <placeholder/>
+                </child>
+              </object>
+            </child>
+            <child type="label">
+              <object class="GtkLabel">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <attributes>
+                  <attribute name="foreground" value="#6262a0a0eaea"/>
+                </attributes>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="x">500</property>
+            <property name="y">300</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkFrame" id="Frame41">
+            <property name="width-request">100</property>
+            <property name="height-request">50</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label-xalign">0</property>
+            <property name="shadow-type">none</property>
+            <child>
+              <object class="GtkAlignment">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="left-padding">12</property>
+                <child>
+                  <placeholder/>
+                </child>
+              </object>
+            </child>
+            <child type="label">
+              <object class="GtkLabel">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <attributes>
+                  <attribute name="foreground" value="#6262a0a0eaea"/>
+                </attributes>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="x">500</property>
+            <property name="y">350</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkFrame" id="Frame42">
+            <property name="width-request">100</property>
+            <property name="height-request">50</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label-xalign">0</property>
+            <property name="shadow-type">none</property>
+            <child>
+              <object class="GtkAlignment">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="left-padding">12</property>
+                <child>
+                  <placeholder/>
+                </child>
+              </object>
+            </child>
+            <child type="label">
+              <object class="GtkLabel">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <attributes>
+                  <attribute name="foreground" value="#6262a0a0eaea"/>
+                </attributes>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="x">500</property>
+            <property name="y">400</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkFrame" id="Frame43">
+            <property name="width-request">100</property>
+            <property name="height-request">50</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label-xalign">0</property>
+            <property name="shadow-type">none</property>
+            <child>
+              <object class="GtkAlignment">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="left-padding">12</property>
+                <child>
+                  <placeholder/>
+                </child>
+              </object>
+            </child>
+            <child type="label">
+              <object class="GtkLabel">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <attributes>
+                  <attribute name="foreground" value="#6262a0a0eaea"/>
+                </attributes>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="x">500</property>
+            <property name="y">450</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkFrame" id="Frame44">
+            <property name="width-request">100</property>
+            <property name="height-request">50</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label-xalign">0</property>
+            <property name="shadow-type">none</property>
+            <child>
+              <object class="GtkAlignment">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="left-padding">12</property>
+                <child>
+                  <placeholder/>
+                </child>
+              </object>
+            </child>
+            <child type="label">
+              <object class="GtkLabel">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <attributes>
+                  <attribute name="foreground" value="#6262a0a0eaea"/>
+                </attributes>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="x">400</property>
+            <property name="y">450</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkFrame" id="Frame45">
+            <property name="width-request">100</property>
+            <property name="height-request">50</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label-xalign">0</property>
+            <property name="shadow-type">none</property>
+            <child>
+              <object class="GtkAlignment">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="left-padding">12</property>
+                <child>
+                  <placeholder/>
+                </child>
+              </object>
+            </child>
+            <child type="label">
+              <object class="GtkLabel">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <attributes>
+                  <attribute name="foreground" value="#6262a0a0eaea"/>
+                </attributes>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="x">300</property>
+            <property name="y">450</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkFrame" id="Frame46">
+            <property name="width-request">100</property>
+            <property name="height-request">50</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label-xalign">0</property>
+            <property name="shadow-type">none</property>
+            <child>
+              <object class="GtkAlignment">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="left-padding">12</property>
+                <child>
+                  <placeholder/>
+                </child>
+              </object>
+            </child>
+            <child type="label">
+              <object class="GtkLabel">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <attributes>
+                  <attribute name="foreground" value="#6262a0a0eaea"/>
+                </attributes>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="x">300</property>
+            <property name="y">400</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkFrame" id="Frame47">
+            <property name="width-request">100</property>
+            <property name="height-request">50</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label-xalign">0</property>
+            <property name="shadow-type">none</property>
+            <child>
+              <object class="GtkAlignment">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="left-padding">12</property>
+                <child>
+                  <placeholder/>
+                </child>
+              </object>
+            </child>
+            <child type="label">
+              <object class="GtkLabel">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <attributes>
+                  <attribute name="foreground" value="#6262a0a0eaea"/>
+                </attributes>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="x">300</property>
+            <property name="y">350</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkFrame" id="Frame48">
+            <property name="width-request">100</property>
+            <property name="height-request">50</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label-xalign">0</property>
+            <property name="shadow-type">none</property>
+            <child>
+              <object class="GtkAlignment">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="left-padding">12</property>
+                <child>
+                  <placeholder/>
+                </child>
+              </object>
+            </child>
+            <child type="label">
+              <object class="GtkLabel">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <attributes>
+                  <attribute name="foreground" value="#6262a0a0eaea"/>
+                </attributes>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="x">400</property>
+            <property name="y">350</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkFrame" id="Frame49">
+            <property name="width-request">100</property>
+            <property name="height-request">50</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label-xalign">0</property>
+            <property name="shadow-type">none</property>
+            <child>
+              <object class="GtkAlignment">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="left-padding">12</property>
+                <child>
+                  <placeholder/>
+                </child>
+              </object>
+            </child>
+            <child type="label">
+              <object class="GtkLabel">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <attributes>
+                  <attribute name="foreground" value="#6262a0a0eaea"/>
+                </attributes>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="x">400</property>
+            <property name="y">400</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>
