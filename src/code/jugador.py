@@ -13,6 +13,7 @@ class Jugador:
         self.puntaje = 0
         self.id = id
         self.nombre = nombre
+        self.pos = 0
     
     def getNombre(self):
         return self.nombre
@@ -25,3 +26,9 @@ class Jugador:
 
     def setPuntaje(self, puntajeNuevo):
         self.puntaje = puntajeNuevo
+    
+    def setPos(self, pos):
+        self.pos = pos
+
+    def getPos(self):
+        return self.pos

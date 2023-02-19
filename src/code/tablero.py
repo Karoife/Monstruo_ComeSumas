@@ -22,15 +22,23 @@ class Tablero:
         return self.printTerm
 
     def llenarResultados(self):
-        for i in range(49): # se crea resultados para las 49 casillas del tablero
-            if i % 5 == 0 and i != 0: # cada cinco espacios se coloca un monstruo
-                self.resultados[i].append("m")
+        for i in range(43): # se crea resultados para las 43 casillas del tablero
+            if i == 0:
+                self.resultados.append("Inicio")
+            elif i == 42:
+                self.resultados.append("Fin")
+            elif i % 5 == 0: # cada cinco espacios se coloca un monstruo
+                self.resultados.append("Monstruo")
             else:
-                self.resultados[i].append(random.randint(2,1500)) # se genera 40 numeros aleatoreos para las casillas que no tienen monstruo
+                self.resultados.append(random.randint(2,1500)) # se genera 40 numeros aleatoreos para las casillas que no tienen monstruo
 
     def llenarPrintTerm(self):
-        for i in range(49): 
-            if i % 5 == 0 and i != 0:
-                self.resultados[i].append("m")
+        for i in range(43): 
+            if i == 0:
+                self.printTerm.append("Inicio")
+            elif i == 42:
+                self.printTerm.append("Fin")
+            elif i % 5 == 0 and i != 0:
+                self.printTerm.append("Monstruo")
             else:
-                self.printTerm[i].append(random.randint(1,self.resultados[i]))
+                self.printTerm.append(random.randint(1,self.resultados[i]))
