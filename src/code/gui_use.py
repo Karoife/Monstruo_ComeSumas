@@ -52,12 +52,12 @@ def main():
     global TopBotAcep
     global TopBotCanc
     global nuevoTablero
-    global nombreRegistro
-    global idRegistro
-    global aceptarRegistrar
-    global cancelarRegistrar
-    global registrarWin
-    global RegistrarJugador
+    global registrarJugador
+    global registroWin
+    global registroRegistrar
+    global registroCancelar
+    global registroID
+    global registroNombre
     # -----------------------------------------
     # jugador1 = jugador.Jugador("4545", "Neymar")
     # jugador2 = jugador.Jugador("5656", "Juan")
@@ -85,12 +85,12 @@ def main():
     TopBotAcep = builder.get_object("TopAceptar")
     TopBotCanc = builder.get_object("TopCancelar")
     nuevoTablero = builder.get_object("NuevoTablero")
-    nombreRegistro = builder.get_object("nombreRegistro")
-    idRegistro = builder.get_object("idRegistro")
-    aceptarRegistrar = builder.get_object("aceptarRegistrar")
-    cancelarRegistrar = builder.get_object("cancelarRegistrar")
-    registrarWin = builder.get_object("registrarWin")
-    RegistrarJugador = builder.get_object("RegistrarJugador")
+    registrarJugador = builder.get_object("RegistrarJugador")
+    registroWin = builder.get_object("RegistroWin")
+    registroRegistrar = builder.get_object("RegistroRegistrar")
+    registroCancelar = builder.get_object("RegistroCancelar")
+    registroID = builder.get_object("RegistroID")
+    registroNombre = builder.get_object("RegistroNombre")
     # ------------------------------------------------------
     popUpCancel.connect("clicked", cerrarPop)
     botDado.connect("clicked", lanzarDado)
@@ -104,8 +104,8 @@ def main():
     TopBotAcep.connect("clicked", aceptarTop10)
     TopBotCanc.connect("clicked", aceptarTop10)
     nuevoTablero.connect("activate", nuevoTabler)
-    cancelarRegistrar.connect("clicked", cancelarRegistroF)
-    RegistrarJugador.connect("activate", MostrarRegistro)
+    registroCancelar.connect("clicked", cancelarRegistro)
+    registrarJugador.connect("activate", mostrarWinRegistro)
     # ------------------------------------------------------
     turno = "J1"
     flag1 = True
@@ -253,6 +253,12 @@ def lanzarDado(button):
 def aceptarMensaje(button):
     mensaje.set_visible(False)
 
+def cancelarRegistro(button):
+    registroWin.set_visible(False)
+
+def mostrarWinRegistro(button):
+    registroWin.set_visible(True)
+
 def aceptarTop10(button):
     Top10Win.set_visible(False)
 
@@ -295,12 +301,6 @@ def responderPreg(button):
 
 def nuevoTabler(button):
     mostrarTablero()
-
-def cancelarRegistroF(button):
-    registrarWin.set_visible(False)
-
-def MostrarRegistro(button):
-    registrarWin.set_visible(True)
 
 def mostrarTablero():
     global tableroJugar
