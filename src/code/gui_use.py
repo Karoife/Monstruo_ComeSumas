@@ -44,6 +44,14 @@ def main():
     global mssAceptar
     global mssAceptar2
     global flag1, flag2
+    global ayuda
+    global salir
+    global Top10Win
+    global Top10Men
+    global Top10Labels
+    global TopBotAcep
+    global TopBotCanc
+    global nuevoTablero
     # -----------------------------------------
     # jugador1 = jugador.Jugador("4545", "Neymar")
     # jugador2 = jugador.Jugador("5656", "Juan")
@@ -64,6 +72,13 @@ def main():
     mssAceptar = builder.get_object("MssAceptar")
     mssAceptar2 = builder.get_object("MssAceptar2")
     entradaID = builder.get_object("Entrada_ID")
+    ayuda = builder.get_object("Ayuda")
+    salir = builder.get_object("Salir")
+    Top10Win = builder.get_object("Top10Win")
+    Top10Men = builder.get_object("Top10")
+    TopBotAcep = builder.get_object("TopAceptar")
+    TopBotCanc = builder.get_object("TopCancelar")
+    nuevoTablero = builder.get_object("NuevoTablero")
     # ------------------------------------------------------
     popUpCancel.connect("clicked", cerrarPop)
     botDado.connect("clicked", lanzarDado)
@@ -71,24 +86,29 @@ def main():
     popUpUpResponder.connect("clicked", responderPreg)
     mssAceptar.connect("clicked", aceptarMensaje)
     mssAceptar2.connect("clicked", aceptarMensaje)
-
+    ayuda.connect("activate", msgAyuda)
+    salir.connect("activate", Gtk.main_quit)
+    Top10Men.connect("activate", mostrarTop10)
+    TopBotAcep.connect("clicked", aceptarTop10)
+    TopBotCanc.connect("clicked", aceptarTop10)
+    nuevoTablero.connect("activate", nuevoTabler)
     # ------------------------------------------------------
     turno = "J1"
     flag1 = True
     flag2 = True
     #frame = builder.get_object("Frame1")
     #frame.modify_bg(Gtk.StateType.NORMAL, Gdk.Color(39321,65535,13107))
-    tableroJugar = tablero.Tablero()
-    labelsJugar = tableroJugar.getResultados()
-    prinDatos = tableroJugar.gerPrinTerm()
+    
     # ---------------------------------------------------------
     frames = []
     labels = []
     ImagenesOne = []
     ImagenesTwo = []
+    Top10Labels = []
     # ---------------------------------------------------------
 
     mostrarTablero()
+    initTop10Labels()
 
     win.connect('destroy', Gtk.main_quit)
     win.show_all()
@@ -97,6 +117,24 @@ def main():
 
     Gtk.main()
     
+def mostrarTop10(button):
+    
+    try:
+        file = open("./src/code/top10.txt", 'r')
+    except FileNotFoundError:
+        sys.exit(1)
+    lineas = file.readlines()
+    Top10Win.set_visible(True)
+    for i in range(10):
+        Top10Labels[i].set_text(lineas[i])
+
+def msgAyuda(button):
+    mensaje.set_visible(True)
+    mensaje.set_markup("El juego es para dos jugadores \n Debe ingresar primero dos ID y luego puede lanzar el Dado")
+
+def initTop10Labels():
+    for i in range(10):
+        Top10Labels.append(builder.get_object("TopLabel" + str(i+1)))
 
 def mostrarPregunta(posicion):
     popUp.set_visible(True)
@@ -201,6 +239,9 @@ def lanzarDado(button):
 def aceptarMensaje(button):
     mensaje.set_visible(False)
 
+def aceptarTop10(button):
+    Top10Win.set_visible(False)
+
 def finalizarJuego(jugadorF):
     jugador1.setPos(0)
     jugador2.setPos(0)
@@ -238,7 +279,17 @@ def responderPreg(button):
     #    responderPreg2()
 
 
+def nuevoTabler(button):
+    mostrarTablero()
+
 def mostrarTablero():
+    global tableroJugar
+    global labelsJugar
+    global prinDatos
+
+    tableroJugar = tablero.Tablero()
+    labelsJugar = tableroJugar.getResultados()
+    prinDatos = tableroJugar.gerPrinTerm()
 
     for i in range(43):
 
