@@ -13,6 +13,8 @@ import tablero
 import sys
 import random
 import jugador
+from playsound import playsound
+
 
 gi.require_version("Gtk", "3.0")
 from gi.repository import Gtk, Gdk
@@ -106,6 +108,7 @@ def main():
     nuevoTablero.connect("activate", nuevoTabler)
     registroCancelar.connect("clicked", cancelarRegistro)
     registrarJugador.connect("activate", mostrarWinRegistro)
+    registroRegistrar.connect("clicked", RegistrarUsuario)
     # ------------------------------------------------------
     turno = "J1"
     flag1 = True
@@ -145,6 +148,7 @@ def mostrarTop10(button):
 def msgAyuda(button):
     mensaje.set_visible(True)
     mensaje.set_markup("El juego es para dos jugadores \n Debe ingresar primero dos ID y luego puede lanzar el Dado")
+    playsound("./src/sounds/Sonido_Alerta.mp3")
 
 def initTop10Labels():
     for i in range(10):
@@ -175,7 +179,10 @@ def agregarJugar(button):
             flag2 = False
         except:
             pass
-    
+    else:
+        mensaje.set_visible(True)
+        mensaje.set_markup("No se puede agregar mas de dos jugadores")
+        playsound("./src/sounds/Sonido_Alerta.mp3")
 
 
 
@@ -230,6 +237,7 @@ def lanzarDado(button):
                     jugador1.setPos(posactual - 5)
                     ImagenesOne[posactual-5].set_visible(True)
                     turno = "J2"
+                    playsound("./src/sounds/Caer_Monstruo.mp3")
                 else:
                     mostrarPregunta(jugador1.getPos())
             else:
@@ -245,6 +253,7 @@ def lanzarDado(button):
                         jugador2.setPos(posactual - 5)
                         ImagenesTwo[posactual-5].set_visible(True)
                         turno = "J1"
+                        playsound("./src/sounds/Caer_Monstruo.mp3")
                 else:
                     mostrarPregunta(jugador2.getPos())
             else:
@@ -265,8 +274,10 @@ def aceptarTop10(button):
 def finalizarJuego(jugadorF):
     jugador1.setPos(0)
     jugador2.setPos(0)
+    actualizarTop10(jugadorF)
     mensaje.set_visible(True)
     mensaje.set_markup("El ganador es " + jugadorF.getNombre())
+    playsound("./src/sounds/Sonido_Alerta.mp3")
 
 
 def mostrarFicha(button):
@@ -275,12 +286,52 @@ def mostrarFicha(button):
     prueba.set_visible(True)
     prueba2.set_visible(True)
 
+def RegistrarUsuario(button):
+    if registroID.get_text() != "" and registroNombre.get_text() != "":
+        if buscarID(registroID.get_text()):
+            UsuarioExistenteMSJ()
+        else:
+            escribirJugadores(registroID.get_text(), registroNombre.get_text())
+
+def escribirJugadores(idregistro, nombreRegistro):
+    try:
+        file = open("./src/code/jugadores.txt", "a")
+    except FileNotFoundError:
+        sys.exit(1)
+    file.write(idregistro + "\t" + nombreRegistro + "\n")
+    UsuarioRegistradoMSJ()
+    file.close()
+
+def buscarID(idregistro):
+    try:
+        file = open("./src/code/jugadores.txt", "r")
+    except FileNotFoundError:
+        sys.exit(1)
+    lineas = file.readlines()
+    for linea in lineas:
+        id = linea.split()[0]
+        if id == idregistro:
+            file.close()
+            return True
+    file.close()
+    return False
+
+def UsuarioRegistradoMSJ():
+    mensaje.set_visible(True)
+    mensaje.set_markup("El usuario se ha registrado exitosamente.")
+    playsound("./src/sounds/Sonido_Alerta.mp3")
+
+def UsuarioExistenteMSJ():
+    mensaje.set_visible(True)
+    mensaje.set_markup("El ID ya existe, por favor intente con otro.")
+    playsound("./src/sounds/Sonido_Alerta.mp3")
 
 def responderPreg(button):
     global turno
     if turno == "J1":
         if (respuesta.get_text() == str(labelsJugar[jugador1.getPos()])):
             jugador1.setPuntaje(jugador1.getPuntaje()+labelsJugar[jugador1.getPos()])
+            playsound("./scr/sound/Efecto_Caminar.mp3")
         else:
             jugador1.setPos(jugador1.getPos() - dado)
 
@@ -289,6 +340,7 @@ def responderPreg(button):
     elif turno == "J2":
         if (respuesta.get_text() == str(labelsJugar[jugador2.getPos()])):
             jugador2.setPuntaje(jugador2.getPuntaje()+labelsJugar[jugador2.getPos()])
+            playsound("./scr/sound/Efecto_Caminar.mp3")
         else:
             jugador2.setPos(jugador2.getPos() - dado)
 
@@ -298,6 +350,30 @@ def responderPreg(button):
     #else:
     #    responderPreg2()
 
+def leerTop10():
+    try:
+        file = open("./src/code/top10.txt", "r")
+    except FileNotFoundError:
+        sys.exit(1)
+    lineas = file.readlines()
+    file.close()
+    return lineas
+
+def actualizarTop10(jugadorA):
+    lineas = leerTop10()
+    try:
+        file = open("./src/code/top10.txt", "w")
+    except FileNotFoundError:
+        sys.exit(1)
+    lineas.append(jugadorA.getID() + "\t" + jugadorA.getNombre() + "\t" + jugadorA.getPuntaje())
+    lineas.sort(key=ordenarListaKey)
+    lineas.pop()
+    for linea in lineas:
+        file.write(linea + "\n")
+    file.close()
+
+def ordenarListaKey(lista10):
+    return int(lista10[2])
 
 def nuevoTabler(button):
     mostrarTablero()
