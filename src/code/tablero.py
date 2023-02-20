@@ -3,11 +3,13 @@
 # Date:     16/02/2023
 # Version:  1.0
 # ----------------------------------------------
-# Clase Jugador 
+# Clase Jugador
 # Utilizada para guardar los puntajes
 # ----------------------------------------------
 from __future__ import annotations
 import random
+
+
 class Tablero:
     def __init__(self):
         self.printTerm = list()
@@ -22,18 +24,22 @@ class Tablero:
         return self.printTerm
 
     def llenarResultados(self):
-        for i in range(43): # se crea resultados para las 43 casillas del tablero
+        # se crea resultados para las
+        # 43 casillas del tablero
+        for i in range(43):
             if i == 0:
                 self.resultados.append("Inicio")
             elif i == 42:
                 self.resultados.append("Fin")
-            elif i % 5 == 0: # cada cinco espacios se coloca un monstruo
+            elif i % 5 == 0:  # cada cinco espacios se coloca un monstruo
                 self.resultados.append("Monstruo")
             else:
-                self.resultados.append(random.randint(2,1500)) # se genera 40 numeros aleatoreos para las casillas que no tienen monstruo
+                self.resultados.append(random.randint(2, 1500))
+                # se genera 40 numeros aleatoreos
+                # para las casillas que no tienen monstruo
 
     def llenarPrintTerm(self):
-        for i in range(43): 
+        for i in range(43):
             if i == 0:
                 self.printTerm.append("Inicio")
             elif i == 42:
@@ -41,4 +47,4 @@ class Tablero:
             elif i % 5 == 0 and i != 0:
                 self.printTerm.append("Monstruo")
             else:
-                self.printTerm.append(random.randint(1,self.resultados[i]))
+                self.printTerm.append(random.randint(1, self.resultados[i]))
