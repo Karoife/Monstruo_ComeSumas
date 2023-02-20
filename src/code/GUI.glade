@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Generated with glade 3.38.2 -->
+<!-- Generated with glade 3.22.2 -->
 <interface>
   <requires lib="gtk+" version="3.24"/>
   <object class="GtkMessageDialog" id="Message">
-    <property name="can-focus">False</property>
-    <property name="type-hint">dialog</property>
+    <property name="can_focus">False</property>
+    <property name="type_hint">dialog</property>
     <child internal-child="vbox">
       <object class="GtkBox">
-        <property name="width-request">-1</property>
-        <property name="can-focus">False</property>
+        <property name="width_request">-1</property>
+        <property name="can_focus">False</property>
         <property name="orientation">vertical</property>
         <property name="spacing">2</property>
         <child internal-child="action_area">
           <object class="GtkButtonBox">
-            <property name="can-focus">False</property>
+            <property name="can_focus">False</property>
             <property name="homogeneous">True</property>
-            <property name="layout-style">end</property>
+            <property name="layout_style">end</property>
             <child>
               <object class="GtkButton" id="MssAceptar">
                 <property name="label" translatable="yes">Aceptar</property>
                 <property name="visible">True</property>
-                <property name="can-focus">True</property>
-                <property name="receives-default">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">True</property>
               </object>
               <packing>
                 <property name="expand">True</property>
@@ -33,8 +33,8 @@
               <object class="GtkButton" id="MssAceptar2">
                 <property name="label" translatable="yes">Cancelar</property>
                 <property name="visible">True</property>
-                <property name="can-focus">True</property>
-                <property name="receives-default">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">True</property>
               </object>
               <packing>
                 <property name="expand">True</property>
@@ -53,23 +53,26 @@
     </child>
   </object>
   <object class="GtkDialog" id="Popup">
-    <property name="can-focus">False</property>
-    <property name="type-hint">dialog</property>
+    <property name="can_focus">False</property>
+    <property name="type_hint">dialog</property>
+    <child type="titlebar">
+      <placeholder/>
+    </child>
     <child internal-child="vbox">
       <object class="GtkBox" id="VentanaPregunt">
-        <property name="can-focus">False</property>
+        <property name="can_focus">False</property>
         <property name="orientation">vertical</property>
         <property name="spacing">2</property>
         <child internal-child="action_area">
           <object class="GtkButtonBox">
-            <property name="can-focus">False</property>
-            <property name="layout-style">end</property>
+            <property name="can_focus">False</property>
+            <property name="layout_style">end</property>
             <child>
               <object class="GtkButton" id="Responder">
                 <property name="label" translatable="yes">Responder</property>
                 <property name="visible">True</property>
-                <property name="can-focus">True</property>
-                <property name="receives-default">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">True</property>
               </object>
               <packing>
                 <property name="expand">True</property>
@@ -81,8 +84,8 @@
               <object class="GtkButton" id="Cancelar">
                 <property name="label" translatable="yes">No lo se</property>
                 <property name="visible">True</property>
-                <property name="can-focus">True</property>
-                <property name="receives-default">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">True</property>
               </object>
               <packing>
                 <property name="expand">True</property>
@@ -99,14 +102,14 @@
         </child>
         <child>
           <object class="GtkFixed" id="Plan">
-            <property name="width-request">0</property>
-            <property name="height-request">156</property>
+            <property name="width_request">0</property>
+            <property name="height_request">156</property>
             <property name="visible">True</property>
-            <property name="can-focus">False</property>
+            <property name="can_focus">False</property>
             <child>
               <object class="GtkLabel" id="Pregunta">
                 <property name="visible">True</property>
-                <property name="can-focus">False</property>
+                <property name="can_focus">False</property>
               </object>
               <packing>
                 <property name="x">10</property>
@@ -116,7 +119,7 @@
             <child>
               <object class="GtkEntry" id="Respuesta">
                 <property name="visible">True</property>
-                <property name="can-focus">True</property>
+                <property name="can_focus">True</property>
               </object>
               <packing>
                 <property name="x">79</property>
@@ -134,23 +137,26 @@
     </child>
   </object>
   <object class="GtkDialog" id="Top10Win">
-    <property name="can-focus">False</property>
-    <property name="type-hint">dialog</property>
+    <property name="can_focus">False</property>
+    <property name="type_hint">dialog</property>
+    <child type="titlebar">
+      <placeholder/>
+    </child>
     <child internal-child="vbox">
       <object class="GtkBox">
-        <property name="can-focus">False</property>
+        <property name="can_focus">False</property>
         <property name="orientation">vertical</property>
         <property name="spacing">2</property>
         <child internal-child="action_area">
           <object class="GtkButtonBox">
-            <property name="can-focus">False</property>
-            <property name="layout-style">end</property>
+            <property name="can_focus">False</property>
+            <property name="layout_style">end</property>
             <child>
               <object class="GtkButton" id="TopAceptar">
                 <property name="label" translatable="yes">Aceptar</property>
                 <property name="visible">True</property>
-                <property name="can-focus">True</property>
-                <property name="receives-default">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">True</property>
               </object>
               <packing>
                 <property name="expand">True</property>
@@ -162,8 +168,8 @@
               <object class="GtkButton" id="TopCancelar">
                 <property name="label" translatable="yes">Cancelar</property>
                 <property name="visible">True</property>
-                <property name="can-focus">True</property>
-                <property name="receives-default">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">True</property>
               </object>
               <packing>
                 <property name="expand">True</property>
@@ -181,12 +187,12 @@
         <child>
           <object class="GtkBox">
             <property name="visible">True</property>
-            <property name="can-focus">False</property>
+            <property name="can_focus">False</property>
             <property name="orientation">vertical</property>
             <child>
               <object class="GtkLabel" id="Titulo">
                 <property name="visible">True</property>
-                <property name="can-focus">False</property>
+                <property name="can_focus">False</property>
                 <property name="label" translatable="yes">Los 10 Mejores Jugadores</property>
                 <attributes>
                   <attribute name="font-desc" value="Sans Bold 12"/>
@@ -201,7 +207,7 @@
             <child>
               <object class="GtkLabel">
                 <property name="visible">True</property>
-                <property name="can-focus">False</property>
+                <property name="can_focus">False</property>
                 <property name="label" translatable="yes">ID	Nombre	Pts</property>
               </object>
               <packing>
@@ -213,7 +219,7 @@
             <child>
               <object class="GtkLabel" id="TopLabel1">
                 <property name="visible">True</property>
-                <property name="can-focus">False</property>
+                <property name="can_focus">False</property>
               </object>
               <packing>
                 <property name="expand">False</property>
@@ -224,7 +230,7 @@
             <child>
               <object class="GtkLabel" id="TopLabel2">
                 <property name="visible">True</property>
-                <property name="can-focus">False</property>
+                <property name="can_focus">False</property>
               </object>
               <packing>
                 <property name="expand">False</property>
@@ -235,7 +241,7 @@
             <child>
               <object class="GtkLabel" id="TopLabel3">
                 <property name="visible">True</property>
-                <property name="can-focus">False</property>
+                <property name="can_focus">False</property>
               </object>
               <packing>
                 <property name="expand">False</property>
@@ -246,7 +252,7 @@
             <child>
               <object class="GtkLabel" id="TopLabel4">
                 <property name="visible">True</property>
-                <property name="can-focus">False</property>
+                <property name="can_focus">False</property>
               </object>
               <packing>
                 <property name="expand">False</property>
@@ -257,7 +263,7 @@
             <child>
               <object class="GtkLabel" id="TopLabel5">
                 <property name="visible">True</property>
-                <property name="can-focus">False</property>
+                <property name="can_focus">False</property>
               </object>
               <packing>
                 <property name="expand">False</property>
@@ -268,7 +274,7 @@
             <child>
               <object class="GtkLabel" id="TopLabel6">
                 <property name="visible">True</property>
-                <property name="can-focus">False</property>
+                <property name="can_focus">False</property>
               </object>
               <packing>
                 <property name="expand">False</property>
@@ -279,7 +285,7 @@
             <child>
               <object class="GtkLabel" id="TopLabel7">
                 <property name="visible">True</property>
-                <property name="can-focus">False</property>
+                <property name="can_focus">False</property>
               </object>
               <packing>
                 <property name="expand">False</property>
@@ -290,7 +296,7 @@
             <child>
               <object class="GtkLabel" id="TopLabel8">
                 <property name="visible">True</property>
-                <property name="can-focus">False</property>
+                <property name="can_focus">False</property>
               </object>
               <packing>
                 <property name="expand">False</property>
@@ -301,7 +307,7 @@
             <child>
               <object class="GtkLabel" id="TopLabel9">
                 <property name="visible">True</property>
-                <property name="can-focus">False</property>
+                <property name="can_focus">False</property>
               </object>
               <packing>
                 <property name="expand">False</property>
@@ -312,7 +318,7 @@
             <child>
               <object class="GtkLabel" id="TopLabel10">
                 <property name="visible">True</property>
-                <property name="can-focus">False</property>
+                <property name="can_focus">False</property>
               </object>
               <packing>
                 <property name="expand">False</property>
@@ -330,76 +336,85 @@
       </object>
     </child>
   </object>
+  <object class="GtkImage">
+    <property name="visible">True</property>
+    <property name="can_focus">False</property>
+    <property name="stock">gtk-missing-image</property>
+  </object>
   <object class="GtkImage" id="image1">
     <property name="visible">True</property>
-    <property name="can-focus">False</property>
+    <property name="can_focus">False</property>
   </object>
   <object class="GtkImage" id="image2">
     <property name="visible">True</property>
-    <property name="can-focus">False</property>
-    <property name="icon-name">applications-multimedia</property>
+    <property name="can_focus">False</property>
+    <property name="icon_name">applications-multimedia</property>
   </object>
   <object class="GtkWindow" id="Ventana">
-    <property name="can-focus">False</property>
+    <property name="can_focus">False</property>
     <property name="resizable">False</property>
+    <child type="titlebar">
+      <placeholder/>
+    </child>
     <child>
       <object class="GtkFixed" id="Plano">
         <property name="visible">True</property>
-        <property name="can-focus">False</property>
+        <property name="can_focus">False</property>
         <child>
           <object class="GtkMenuBar" id="Menu">
-            <property name="width-request">800</property>
+            <property name="width_request">800</property>
             <property name="visible">True</property>
-            <property name="can-focus">False</property>
+            <property name="can_focus">False</property>
             <child>
               <object class="GtkMenuItem">
                 <property name="visible">True</property>
-                <property name="can-focus">False</property>
+                <property name="can_focus">False</property>
                 <property name="label" translatable="yes">_Archivo</property>
-                <property name="use-underline">True</property>
+                <property name="use_underline">True</property>
                 <child type="submenu">
                   <object class="GtkMenu">
                     <property name="visible">True</property>
-                    <property name="can-focus">False</property>
+                    <property name="can_focus">False</property>
                     <child>
                       <object class="GtkImageMenuItem" id="NuevoTablero">
                         <property name="label">Nuevo Tablero</property>
                         <property name="visible">True</property>
-                        <property name="can-focus">False</property>
+                        <property name="can_focus">False</property>
                         <property name="image">image2</property>
-                        <property name="use-stock">False</property>
+                        <property name="use_stock">False</property>
                       </object>
                     </child>
                     <child>
                       <object class="GtkImageMenuItem" id="RegistrarJugador">
-                        <property name="label">gtk-open</property>
+                        <property name="label">Registrar Jugador</property>
                         <property name="visible">True</property>
-                        <property name="can-focus">False</property>
-                        <property name="use-underline">True</property>
-                        <property name="use-stock">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="image">__glade_unnamed_157</property>
+                        <property name="use_stock">False</property>
                       </object>
                     </child>
                     <child>
                       <object class="GtkImageMenuItem" id="Top10">
                         <property name="label">Top10</property>
                         <property name="visible">True</property>
-                        <property name="can-focus">False</property>
+                        <property name="can_focus">False</property>
                         <property name="image">image1</property>
-                        <property name="use-stock">False</property>
+                        <property name="use_stock">False</property>
                       </object>
                     </child>
                     <child>
                       <object class="GtkSeparatorMenuItem">
                         <property name="visible">True</property>
-                        <property name="can-focus">False</property>
+                        <property name="can_focus">False</property>
                       </object>
                     </child>
                     <child>
                       <object class="GtkImageMenuItem" id="Salir">
                         <property name="label">gtk-quit</property>
                         <property name="visible">True</property>
-                        <property name="can-focus">False</property>
-                        <property name="use-stock">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="use_underline">True</property>
+                        <property name="use_stock">True</property>
                       </object>
                     </child>
                   </object>
@@ -409,20 +424,20 @@
             <child>
               <object class="GtkMenuItem">
                 <property name="visible">True</property>
-                <property name="can-focus">False</property>
+                <property name="can_focus">False</property>
                 <property name="label" translatable="yes">_Ayuda</property>
-                <property name="use-underline">True</property>
+                <property name="use_underline">True</property>
                 <child type="submenu">
                   <object class="GtkMenu">
                     <property name="visible">True</property>
-                    <property name="can-focus">False</property>
+                    <property name="can_focus">False</property>
                     <child>
                       <object class="GtkImageMenuItem" id="Ayuda">
                         <property name="label">gtk-about</property>
                         <property name="visible">True</property>
-                        <property name="can-focus">False</property>
-                        <property name="use-underline">True</property>
-                        <property name="use-stock">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="use_underline">True</property>
+                        <property name="use_stock">True</property>
                       </object>
                     </child>
                   </object>
@@ -434,7 +449,7 @@
         <child>
           <object class="GtkLabel">
             <property name="visible">True</property>
-            <property name="can-focus">False</property>
+            <property name="can_focus">False</property>
             <property name="label" translatable="yes">ID Jugador:</property>
           </object>
           <packing>
@@ -445,8 +460,8 @@
         <child>
           <object class="GtkEntry" id="Entrada_ID">
             <property name="visible">True</property>
-            <property name="can-focus">True</property>
-            <property name="tooltip-text" translatable="yes">Ingrese el ID del Jugador</property>
+            <property name="can_focus">True</property>
+            <property name="tooltip_text" translatable="yes">Ingrese el ID del Jugador</property>
           </object>
           <packing>
             <property name="x">200</property>
@@ -457,8 +472,8 @@
           <object class="GtkButton" id="Agregar">
             <property name="label" translatable="yes">Agregar</property>
             <property name="visible">True</property>
-            <property name="can-focus">True</property>
-            <property name="receives-default">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
           </object>
           <packing>
             <property name="x">400</property>
@@ -467,27 +482,27 @@
         </child>
         <child>
           <object class="GtkFrame" id="Frame1">
-            <property name="width-request">100</property>
-            <property name="height-request">100</property>
+            <property name="width_request">100</property>
+            <property name="height_request">100</property>
             <property name="visible">True</property>
-            <property name="can-focus">False</property>
-            <property name="label-xalign">0</property>
-            <property name="shadow-type">none</property>
+            <property name="can_focus">False</property>
+            <property name="label_xalign">0</property>
+            <property name="shadow_type">none</property>
             <child>
               <object class="GtkAlignment">
                 <property name="visible">True</property>
-                <property name="can-focus">False</property>
-                <property name="left-padding">12</property>
+                <property name="can_focus">False</property>
+                <property name="left_padding">12</property>
                 <child>
                   <object class="GtkBox">
                     <property name="visible">True</property>
-                    <property name="can-focus">False</property>
+                    <property name="can_focus">False</property>
                     <property name="orientation">vertical</property>
                     <child>
                       <object class="GtkImage" id="ImagenOneF1">
-                        <property name="can-focus">False</property>
-                        <property name="no-show-all">True</property>
-                        <property name="icon-name">emblem-favorite</property>
+                        <property name="can_focus">False</property>
+                        <property name="no_show_all">True</property>
+                        <property name="icon_name">emblem-favorite</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -497,9 +512,9 @@
                     </child>
                     <child>
                       <object class="GtkImage" id="ImagenTwoF1">
-                        <property name="can-focus">False</property>
-                        <property name="no-show-all">True</property>
-                        <property name="icon-name">applications-internet</property>
+                        <property name="can_focus">False</property>
+                        <property name="no_show_all">True</property>
+                        <property name="icon_name">applications-internet</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -510,7 +525,7 @@
                     <child>
                       <object class="GtkLabel" id="labelF1">
                         <property name="visible">True</property>
-                        <property name="can-focus">False</property>
+                        <property name="can_focus">False</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -525,7 +540,7 @@
             <child type="label">
               <object class="GtkLabel">
                 <property name="visible">True</property>
-                <property name="can-focus">False</property>
+                <property name="can_focus">False</property>
                 <attributes>
                   <attribute name="foreground" value="#6262a0a0eaea"/>
                   <attribute name="background" value="#3333d1d17a7a"/>
@@ -539,27 +554,27 @@
         </child>
         <child>
           <object class="GtkFrame" id="Frame2">
-            <property name="width-request">100</property>
-            <property name="height-request">100</property>
+            <property name="width_request">100</property>
+            <property name="height_request">100</property>
             <property name="visible">True</property>
-            <property name="can-focus">False</property>
-            <property name="label-xalign">0</property>
-            <property name="shadow-type">none</property>
+            <property name="can_focus">False</property>
+            <property name="label_xalign">0</property>
+            <property name="shadow_type">none</property>
             <child>
               <object class="GtkAlignment">
                 <property name="visible">True</property>
-                <property name="can-focus">False</property>
-                <property name="left-padding">12</property>
+                <property name="can_focus">False</property>
+                <property name="left_padding">12</property>
                 <child>
                   <object class="GtkBox">
                     <property name="visible">True</property>
-                    <property name="can-focus">False</property>
+                    <property name="can_focus">False</property>
                     <property name="orientation">vertical</property>
                     <child>
                       <object class="GtkImage" id="ImagenOneF2">
-                        <property name="can-focus">False</property>
-                        <property name="no-show-all">True</property>
-                        <property name="icon-name">emblem-favorite</property>
+                        <property name="can_focus">False</property>
+                        <property name="no_show_all">True</property>
+                        <property name="icon_name">emblem-favorite</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -569,9 +584,9 @@
                     </child>
                     <child>
                       <object class="GtkImage" id="ImagenTwoF2">
-                        <property name="can-focus">False</property>
-                        <property name="no-show-all">True</property>
-                        <property name="icon-name">applications-internet</property>
+                        <property name="can_focus">False</property>
+                        <property name="no_show_all">True</property>
+                        <property name="icon_name">applications-internet</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -582,7 +597,7 @@
                     <child>
                       <object class="GtkLabel" id="labelF2">
                         <property name="visible">True</property>
-                        <property name="can-focus">False</property>
+                        <property name="can_focus">False</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -597,7 +612,7 @@
             <child type="label">
               <object class="GtkLabel">
                 <property name="visible">True</property>
-                <property name="can-focus">False</property>
+                <property name="can_focus">False</property>
                 <attributes>
                   <attribute name="foreground" value="#6262a0a0eaea"/>
                 </attributes>
@@ -611,27 +626,27 @@
         </child>
         <child>
           <object class="GtkFrame" id="Frame3">
-            <property name="width-request">100</property>
-            <property name="height-request">100</property>
+            <property name="width_request">100</property>
+            <property name="height_request">100</property>
             <property name="visible">True</property>
-            <property name="can-focus">False</property>
-            <property name="label-xalign">0</property>
-            <property name="shadow-type">none</property>
+            <property name="can_focus">False</property>
+            <property name="label_xalign">0</property>
+            <property name="shadow_type">none</property>
             <child>
               <object class="GtkAlignment">
                 <property name="visible">True</property>
-                <property name="can-focus">False</property>
-                <property name="left-padding">12</property>
+                <property name="can_focus">False</property>
+                <property name="left_padding">12</property>
                 <child>
                   <object class="GtkBox">
                     <property name="visible">True</property>
-                    <property name="can-focus">False</property>
+                    <property name="can_focus">False</property>
                     <property name="orientation">vertical</property>
                     <child>
                       <object class="GtkImage" id="ImagenOneF3">
-                        <property name="can-focus">False</property>
-                        <property name="no-show-all">True</property>
-                        <property name="icon-name">emblem-favorite</property>
+                        <property name="can_focus">False</property>
+                        <property name="no_show_all">True</property>
+                        <property name="icon_name">emblem-favorite</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -641,9 +656,9 @@
                     </child>
                     <child>
                       <object class="GtkImage" id="ImagenTwoF3">
-                        <property name="can-focus">False</property>
-                        <property name="no-show-all">True</property>
-                        <property name="icon-name">applications-internet</property>
+                        <property name="can_focus">False</property>
+                        <property name="no_show_all">True</property>
+                        <property name="icon_name">applications-internet</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -654,7 +669,7 @@
                     <child>
                       <object class="GtkLabel" id="labelF3">
                         <property name="visible">True</property>
-                        <property name="can-focus">False</property>
+                        <property name="can_focus">False</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -669,7 +684,7 @@
             <child type="label">
               <object class="GtkLabel">
                 <property name="visible">True</property>
-                <property name="can-focus">False</property>
+                <property name="can_focus">False</property>
                 <attributes>
                   <attribute name="foreground" value="#6262a0a0eaea"/>
                 </attributes>
@@ -683,27 +698,27 @@
         </child>
         <child>
           <object class="GtkFrame" id="Frame4">
-            <property name="width-request">100</property>
-            <property name="height-request">100</property>
+            <property name="width_request">100</property>
+            <property name="height_request">100</property>
             <property name="visible">True</property>
-            <property name="can-focus">False</property>
-            <property name="label-xalign">0</property>
-            <property name="shadow-type">none</property>
+            <property name="can_focus">False</property>
+            <property name="label_xalign">0</property>
+            <property name="shadow_type">none</property>
             <child>
               <object class="GtkAlignment">
                 <property name="visible">True</property>
-                <property name="can-focus">False</property>
-                <property name="left-padding">12</property>
+                <property name="can_focus">False</property>
+                <property name="left_padding">12</property>
                 <child>
                   <object class="GtkBox">
                     <property name="visible">True</property>
-                    <property name="can-focus">False</property>
+                    <property name="can_focus">False</property>
                     <property name="orientation">vertical</property>
                     <child>
                       <object class="GtkImage" id="ImagenOneF4">
-                        <property name="can-focus">False</property>
-                        <property name="no-show-all">True</property>
-                        <property name="icon-name">emblem-favorite</property>
+                        <property name="can_focus">False</property>
+                        <property name="no_show_all">True</property>
+                        <property name="icon_name">emblem-favorite</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -713,9 +728,9 @@
                     </child>
                     <child>
                       <object class="GtkImage" id="ImagenTwoF4">
-                        <property name="can-focus">False</property>
-                        <property name="no-show-all">True</property>
-                        <property name="icon-name">applications-internet</property>
+                        <property name="can_focus">False</property>
+                        <property name="no_show_all">True</property>
+                        <property name="icon_name">applications-internet</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -726,7 +741,7 @@
                     <child>
                       <object class="GtkLabel" id="labelF4">
                         <property name="visible">True</property>
-                        <property name="can-focus">False</property>
+                        <property name="can_focus">False</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -741,7 +756,7 @@
             <child type="label">
               <object class="GtkLabel">
                 <property name="visible">True</property>
-                <property name="can-focus">False</property>
+                <property name="can_focus">False</property>
                 <attributes>
                   <attribute name="foreground" value="#6262a0a0eaea"/>
                 </attributes>
@@ -755,27 +770,27 @@
         </child>
         <child>
           <object class="GtkFrame" id="Frame5">
-            <property name="width-request">100</property>
-            <property name="height-request">100</property>
+            <property name="width_request">100</property>
+            <property name="height_request">100</property>
             <property name="visible">True</property>
-            <property name="can-focus">False</property>
-            <property name="label-xalign">0</property>
-            <property name="shadow-type">none</property>
+            <property name="can_focus">False</property>
+            <property name="label_xalign">0</property>
+            <property name="shadow_type">none</property>
             <child>
               <object class="GtkAlignment">
                 <property name="visible">True</property>
-                <property name="can-focus">False</property>
-                <property name="left-padding">12</property>
+                <property name="can_focus">False</property>
+                <property name="left_padding">12</property>
                 <child>
                   <object class="GtkBox">
                     <property name="visible">True</property>
-                    <property name="can-focus">False</property>
+                    <property name="can_focus">False</property>
                     <property name="orientation">vertical</property>
                     <child>
                       <object class="GtkImage" id="ImagenOneF5">
-                        <property name="can-focus">False</property>
-                        <property name="no-show-all">True</property>
-                        <property name="icon-name">emblem-favorite</property>
+                        <property name="can_focus">False</property>
+                        <property name="no_show_all">True</property>
+                        <property name="icon_name">emblem-favorite</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -785,9 +800,9 @@
                     </child>
                     <child>
                       <object class="GtkImage" id="ImagenTwoF5">
-                        <property name="can-focus">False</property>
-                        <property name="no-show-all">True</property>
-                        <property name="icon-name">applications-internet</property>
+                        <property name="can_focus">False</property>
+                        <property name="no_show_all">True</property>
+                        <property name="icon_name">applications-internet</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -798,7 +813,7 @@
                     <child>
                       <object class="GtkLabel" id="labelF5">
                         <property name="visible">True</property>
-                        <property name="can-focus">False</property>
+                        <property name="can_focus">False</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -813,7 +828,7 @@
             <child type="label">
               <object class="GtkLabel">
                 <property name="visible">True</property>
-                <property name="can-focus">False</property>
+                <property name="can_focus">False</property>
                 <attributes>
                   <attribute name="foreground" value="#6262a0a0eaea"/>
                 </attributes>
@@ -827,27 +842,27 @@
         </child>
         <child>
           <object class="GtkFrame" id="Frame6">
-            <property name="width-request">100</property>
-            <property name="height-request">100</property>
+            <property name="width_request">100</property>
+            <property name="height_request">100</property>
             <property name="visible">True</property>
-            <property name="can-focus">False</property>
-            <property name="label-xalign">0</property>
-            <property name="shadow-type">none</property>
+            <property name="can_focus">False</property>
+            <property name="label_xalign">0</property>
+            <property name="shadow_type">none</property>
             <child>
               <object class="GtkAlignment">
                 <property name="visible">True</property>
-                <property name="can-focus">False</property>
-                <property name="left-padding">12</property>
+                <property name="can_focus">False</property>
+                <property name="left_padding">12</property>
                 <child>
                   <object class="GtkBox">
                     <property name="visible">True</property>
-                    <property name="can-focus">False</property>
+                    <property name="can_focus">False</property>
                     <property name="orientation">vertical</property>
                     <child>
                       <object class="GtkImage" id="ImagenOneF6">
-                        <property name="can-focus">False</property>
-                        <property name="no-show-all">True</property>
-                        <property name="icon-name">emblem-favorite</property>
+                        <property name="can_focus">False</property>
+                        <property name="no_show_all">True</property>
+                        <property name="icon_name">emblem-favorite</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -857,9 +872,9 @@
                     </child>
                     <child>
                       <object class="GtkImage" id="ImagenTwoF6">
-                        <property name="can-focus">False</property>
-                        <property name="no-show-all">True</property>
-                        <property name="icon-name">applications-internet</property>
+                        <property name="can_focus">False</property>
+                        <property name="no_show_all">True</property>
+                        <property name="icon_name">applications-internet</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -870,7 +885,7 @@
                     <child>
                       <object class="GtkLabel" id="labelF6">
                         <property name="visible">True</property>
-                        <property name="can-focus">False</property>
+                        <property name="can_focus">False</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -885,7 +900,7 @@
             <child type="label">
               <object class="GtkLabel">
                 <property name="visible">True</property>
-                <property name="can-focus">False</property>
+                <property name="can_focus">False</property>
                 <attributes>
                   <attribute name="foreground" value="#6262a0a0eaea"/>
                 </attributes>
@@ -899,27 +914,27 @@
         </child>
         <child>
           <object class="GtkFrame" id="Frame7">
-            <property name="width-request">100</property>
-            <property name="height-request">100</property>
+            <property name="width_request">100</property>
+            <property name="height_request">100</property>
             <property name="visible">True</property>
-            <property name="can-focus">False</property>
-            <property name="label-xalign">0</property>
-            <property name="shadow-type">none</property>
+            <property name="can_focus">False</property>
+            <property name="label_xalign">0</property>
+            <property name="shadow_type">none</property>
             <child>
               <object class="GtkAlignment">
                 <property name="visible">True</property>
-                <property name="can-focus">False</property>
-                <property name="left-padding">12</property>
+                <property name="can_focus">False</property>
+                <property name="left_padding">12</property>
                 <child>
                   <object class="GtkBox">
                     <property name="visible">True</property>
-                    <property name="can-focus">False</property>
+                    <property name="can_focus">False</property>
                     <property name="orientation">vertical</property>
                     <child>
                       <object class="GtkImage" id="ImagenOneF7">
-                        <property name="can-focus">False</property>
-                        <property name="no-show-all">True</property>
-                        <property name="icon-name">emblem-favorite</property>
+                        <property name="can_focus">False</property>
+                        <property name="no_show_all">True</property>
+                        <property name="icon_name">emblem-favorite</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -929,9 +944,9 @@
                     </child>
                     <child>
                       <object class="GtkImage" id="ImagenTwoF7">
-                        <property name="can-focus">False</property>
-                        <property name="no-show-all">True</property>
-                        <property name="icon-name">applications-internet</property>
+                        <property name="can_focus">False</property>
+                        <property name="no_show_all">True</property>
+                        <property name="icon_name">applications-internet</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -942,7 +957,7 @@
                     <child>
                       <object class="GtkLabel" id="labelF7">
                         <property name="visible">True</property>
-                        <property name="can-focus">False</property>
+                        <property name="can_focus">False</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -957,7 +972,7 @@
             <child type="label">
               <object class="GtkLabel">
                 <property name="visible">True</property>
-                <property name="can-focus">False</property>
+                <property name="can_focus">False</property>
                 <attributes>
                   <attribute name="foreground" value="#6262a0a0eaea"/>
                 </attributes>
@@ -971,27 +986,27 @@
         </child>
         <child>
           <object class="GtkFrame" id="Frame8">
-            <property name="width-request">100</property>
-            <property name="height-request">100</property>
+            <property name="width_request">100</property>
+            <property name="height_request">100</property>
             <property name="visible">True</property>
-            <property name="can-focus">False</property>
-            <property name="label-xalign">0</property>
-            <property name="shadow-type">none</property>
+            <property name="can_focus">False</property>
+            <property name="label_xalign">0</property>
+            <property name="shadow_type">none</property>
             <child>
               <object class="GtkAlignment">
                 <property name="visible">True</property>
-                <property name="can-focus">False</property>
-                <property name="left-padding">12</property>
+                <property name="can_focus">False</property>
+                <property name="left_padding">12</property>
                 <child>
                   <object class="GtkBox">
                     <property name="visible">True</property>
-                    <property name="can-focus">False</property>
+                    <property name="can_focus">False</property>
                     <property name="orientation">vertical</property>
                     <child>
                       <object class="GtkImage" id="ImagenOneF8">
-                        <property name="can-focus">False</property>
-                        <property name="no-show-all">True</property>
-                        <property name="icon-name">emblem-favorite</property>
+                        <property name="can_focus">False</property>
+                        <property name="no_show_all">True</property>
+                        <property name="icon_name">emblem-favorite</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -1001,9 +1016,9 @@
                     </child>
                     <child>
                       <object class="GtkImage" id="ImagenTwoF8">
-                        <property name="can-focus">False</property>
-                        <property name="no-show-all">True</property>
-                        <property name="icon-name">applications-internet</property>
+                        <property name="can_focus">False</property>
+                        <property name="no_show_all">True</property>
+                        <property name="icon_name">applications-internet</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -1014,7 +1029,7 @@
                     <child>
                       <object class="GtkLabel" id="labelF8">
                         <property name="visible">True</property>
-                        <property name="can-focus">False</property>
+                        <property name="can_focus">False</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -1029,7 +1044,7 @@
             <child type="label">
               <object class="GtkLabel">
                 <property name="visible">True</property>
-                <property name="can-focus">False</property>
+                <property name="can_focus">False</property>
                 <attributes>
                   <attribute name="foreground" value="#6262a0a0eaea"/>
                 </attributes>
@@ -1043,27 +1058,27 @@
         </child>
         <child>
           <object class="GtkFrame" id="Frame9">
-            <property name="width-request">100</property>
-            <property name="height-request">100</property>
+            <property name="width_request">100</property>
+            <property name="height_request">100</property>
             <property name="visible">True</property>
-            <property name="can-focus">False</property>
-            <property name="label-xalign">0</property>
-            <property name="shadow-type">none</property>
+            <property name="can_focus">False</property>
+            <property name="label_xalign">0</property>
+            <property name="shadow_type">none</property>
             <child>
               <object class="GtkAlignment">
                 <property name="visible">True</property>
-                <property name="can-focus">False</property>
-                <property name="left-padding">12</property>
+                <property name="can_focus">False</property>
+                <property name="left_padding">12</property>
                 <child>
                   <object class="GtkBox">
                     <property name="visible">True</property>
-                    <property name="can-focus">False</property>
+                    <property name="can_focus">False</property>
                     <property name="orientation">vertical</property>
                     <child>
                       <object class="GtkImage" id="ImagenOneF9">
-                        <property name="can-focus">False</property>
-                        <property name="no-show-all">True</property>
-                        <property name="icon-name">emblem-favorite</property>
+                        <property name="can_focus">False</property>
+                        <property name="no_show_all">True</property>
+                        <property name="icon_name">emblem-favorite</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -1073,9 +1088,9 @@
                     </child>
                     <child>
                       <object class="GtkImage" id="ImagenTwoF9">
-                        <property name="can-focus">False</property>
-                        <property name="no-show-all">True</property>
-                        <property name="icon-name">applications-internet</property>
+                        <property name="can_focus">False</property>
+                        <property name="no_show_all">True</property>
+                        <property name="icon_name">applications-internet</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -1086,7 +1101,7 @@
                     <child>
                       <object class="GtkLabel" id="labelF9">
                         <property name="visible">True</property>
-                        <property name="can-focus">False</property>
+                        <property name="can_focus">False</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -1101,7 +1116,7 @@
             <child type="label">
               <object class="GtkLabel">
                 <property name="visible">True</property>
-                <property name="can-focus">False</property>
+                <property name="can_focus">False</property>
                 <attributes>
                   <attribute name="foreground" value="#6262a0a0eaea"/>
                 </attributes>
@@ -1115,27 +1130,27 @@
         </child>
         <child>
           <object class="GtkFrame" id="Frame10">
-            <property name="width-request">100</property>
-            <property name="height-request">100</property>
+            <property name="width_request">100</property>
+            <property name="height_request">100</property>
             <property name="visible">True</property>
-            <property name="can-focus">False</property>
-            <property name="label-xalign">0</property>
-            <property name="shadow-type">none</property>
+            <property name="can_focus">False</property>
+            <property name="label_xalign">0</property>
+            <property name="shadow_type">none</property>
             <child>
               <object class="GtkAlignment">
                 <property name="visible">True</property>
-                <property name="can-focus">False</property>
-                <property name="left-padding">12</property>
+                <property name="can_focus">False</property>
+                <property name="left_padding">12</property>
                 <child>
                   <object class="GtkBox">
                     <property name="visible">True</property>
-                    <property name="can-focus">False</property>
+                    <property name="can_focus">False</property>
                     <property name="orientation">vertical</property>
                     <child>
                       <object class="GtkImage" id="ImagenOneF10">
-                        <property name="can-focus">False</property>
-                        <property name="no-show-all">True</property>
-                        <property name="icon-name">emblem-favorite</property>
+                        <property name="can_focus">False</property>
+                        <property name="no_show_all">True</property>
+                        <property name="icon_name">emblem-favorite</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -1145,9 +1160,9 @@
                     </child>
                     <child>
                       <object class="GtkImage" id="ImagenTwoF10">
-                        <property name="can-focus">False</property>
-                        <property name="no-show-all">True</property>
-                        <property name="icon-name">applications-internet</property>
+                        <property name="can_focus">False</property>
+                        <property name="no_show_all">True</property>
+                        <property name="icon_name">applications-internet</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -1158,7 +1173,7 @@
                     <child>
                       <object class="GtkLabel" id="labelF10">
                         <property name="visible">True</property>
-                        <property name="can-focus">False</property>
+                        <property name="can_focus">False</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -1173,7 +1188,7 @@
             <child type="label">
               <object class="GtkLabel">
                 <property name="visible">True</property>
-                <property name="can-focus">False</property>
+                <property name="can_focus">False</property>
                 <attributes>
                   <attribute name="foreground" value="#6262a0a0eaea"/>
                 </attributes>
@@ -1187,27 +1202,27 @@
         </child>
         <child>
           <object class="GtkFrame" id="Frame11">
-            <property name="width-request">100</property>
-            <property name="height-request">100</property>
+            <property name="width_request">100</property>
+            <property name="height_request">100</property>
             <property name="visible">True</property>
-            <property name="can-focus">False</property>
-            <property name="label-xalign">0</property>
-            <property name="shadow-type">none</property>
+            <property name="can_focus">False</property>
+            <property name="label_xalign">0</property>
+            <property name="shadow_type">none</property>
             <child>
               <object class="GtkAlignment">
                 <property name="visible">True</property>
-                <property name="can-focus">False</property>
-                <property name="left-padding">12</property>
+                <property name="can_focus">False</property>
+                <property name="left_padding">12</property>
                 <child>
                   <object class="GtkBox">
                     <property name="visible">True</property>
-                    <property name="can-focus">False</property>
+                    <property name="can_focus">False</property>
                     <property name="orientation">vertical</property>
                     <child>
                       <object class="GtkImage" id="ImagenOneF11">
-                        <property name="can-focus">False</property>
-                        <property name="no-show-all">True</property>
-                        <property name="icon-name">emblem-favorite</property>
+                        <property name="can_focus">False</property>
+                        <property name="no_show_all">True</property>
+                        <property name="icon_name">emblem-favorite</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -1217,9 +1232,9 @@
                     </child>
                     <child>
                       <object class="GtkImage" id="ImagenTwoF11">
-                        <property name="can-focus">False</property>
-                        <property name="no-show-all">True</property>
-                        <property name="icon-name">applications-internet</property>
+                        <property name="can_focus">False</property>
+                        <property name="no_show_all">True</property>
+                        <property name="icon_name">applications-internet</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -1230,7 +1245,7 @@
                     <child>
                       <object class="GtkLabel" id="labelF11">
                         <property name="visible">True</property>
-                        <property name="can-focus">False</property>
+                        <property name="can_focus">False</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -1245,7 +1260,7 @@
             <child type="label">
               <object class="GtkLabel">
                 <property name="visible">True</property>
-                <property name="can-focus">False</property>
+                <property name="can_focus">False</property>
                 <attributes>
                   <attribute name="foreground" value="#6262a0a0eaea"/>
                 </attributes>
@@ -1259,27 +1274,27 @@
         </child>
         <child>
           <object class="GtkFrame" id="Frame12">
-            <property name="width-request">100</property>
-            <property name="height-request">100</property>
+            <property name="width_request">100</property>
+            <property name="height_request">100</property>
             <property name="visible">True</property>
-            <property name="can-focus">False</property>
-            <property name="label-xalign">0</property>
-            <property name="shadow-type">none</property>
+            <property name="can_focus">False</property>
+            <property name="label_xalign">0</property>
+            <property name="shadow_type">none</property>
             <child>
               <object class="GtkAlignment">
                 <property name="visible">True</property>
-                <property name="can-focus">False</property>
-                <property name="left-padding">12</property>
+                <property name="can_focus">False</property>
+                <property name="left_padding">12</property>
                 <child>
                   <object class="GtkBox">
                     <property name="visible">True</property>
-                    <property name="can-focus">False</property>
+                    <property name="can_focus">False</property>
                     <property name="orientation">vertical</property>
                     <child>
                       <object class="GtkImage" id="ImagenOneF12">
-                        <property name="can-focus">False</property>
-                        <property name="no-show-all">True</property>
-                        <property name="icon-name">emblem-favorite</property>
+                        <property name="can_focus">False</property>
+                        <property name="no_show_all">True</property>
+                        <property name="icon_name">emblem-favorite</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -1289,9 +1304,9 @@
                     </child>
                     <child>
                       <object class="GtkImage" id="ImagenTwoF12">
-                        <property name="can-focus">False</property>
-                        <property name="no-show-all">True</property>
-                        <property name="icon-name">applications-internet</property>
+                        <property name="can_focus">False</property>
+                        <property name="no_show_all">True</property>
+                        <property name="icon_name">applications-internet</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -1302,7 +1317,7 @@
                     <child>
                       <object class="GtkLabel" id="labelF12">
                         <property name="visible">True</property>
-                        <property name="can-focus">False</property>
+                        <property name="can_focus">False</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -1317,7 +1332,7 @@
             <child type="label">
               <object class="GtkLabel">
                 <property name="visible">True</property>
-                <property name="can-focus">False</property>
+                <property name="can_focus">False</property>
                 <attributes>
                   <attribute name="foreground" value="#6262a0a0eaea"/>
                 </attributes>
@@ -1331,27 +1346,27 @@
         </child>
         <child>
           <object class="GtkFrame" id="Frame13">
-            <property name="width-request">100</property>
-            <property name="height-request">100</property>
+            <property name="width_request">100</property>
+            <property name="height_request">100</property>
             <property name="visible">True</property>
-            <property name="can-focus">False</property>
-            <property name="label-xalign">0</property>
-            <property name="shadow-type">none</property>
+            <property name="can_focus">False</property>
+            <property name="label_xalign">0</property>
+            <property name="shadow_type">none</property>
             <child>
               <object class="GtkAlignment">
                 <property name="visible">True</property>
-                <property name="can-focus">False</property>
-                <property name="left-padding">12</property>
+                <property name="can_focus">False</property>
+                <property name="left_padding">12</property>
                 <child>
                   <object class="GtkBox">
                     <property name="visible">True</property>
-                    <property name="can-focus">False</property>
+                    <property name="can_focus">False</property>
                     <property name="orientation">vertical</property>
                     <child>
                       <object class="GtkImage" id="ImagenOneF13">
-                        <property name="can-focus">False</property>
-                        <property name="no-show-all">True</property>
-                        <property name="icon-name">emblem-favorite</property>
+                        <property name="can_focus">False</property>
+                        <property name="no_show_all">True</property>
+                        <property name="icon_name">emblem-favorite</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -1361,9 +1376,9 @@
                     </child>
                     <child>
                       <object class="GtkImage" id="ImagenTwoF13">
-                        <property name="can-focus">False</property>
-                        <property name="no-show-all">True</property>
-                        <property name="icon-name">applications-internet</property>
+                        <property name="can_focus">False</property>
+                        <property name="no_show_all">True</property>
+                        <property name="icon_name">applications-internet</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -1374,7 +1389,7 @@
                     <child>
                       <object class="GtkLabel" id="labelF13">
                         <property name="visible">True</property>
-                        <property name="can-focus">False</property>
+                        <property name="can_focus">False</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -1389,7 +1404,7 @@
             <child type="label">
               <object class="GtkLabel">
                 <property name="visible">True</property>
-                <property name="can-focus">False</property>
+                <property name="can_focus">False</property>
                 <attributes>
                   <attribute name="foreground" value="#6262a0a0eaea"/>
                 </attributes>
@@ -1403,27 +1418,27 @@
         </child>
         <child>
           <object class="GtkFrame" id="Frame14">
-            <property name="width-request">100</property>
-            <property name="height-request">100</property>
+            <property name="width_request">100</property>
+            <property name="height_request">100</property>
             <property name="visible">True</property>
-            <property name="can-focus">False</property>
-            <property name="label-xalign">0</property>
-            <property name="shadow-type">none</property>
+            <property name="can_focus">False</property>
+            <property name="label_xalign">0</property>
+            <property name="shadow_type">none</property>
             <child>
               <object class="GtkAlignment">
                 <property name="visible">True</property>
-                <property name="can-focus">False</property>
-                <property name="left-padding">12</property>
+                <property name="can_focus">False</property>
+                <property name="left_padding">12</property>
                 <child>
                   <object class="GtkBox">
                     <property name="visible">True</property>
-                    <property name="can-focus">False</property>
+                    <property name="can_focus">False</property>
                     <property name="orientation">vertical</property>
                     <child>
                       <object class="GtkImage" id="ImagenOneF14">
-                        <property name="can-focus">False</property>
-                        <property name="no-show-all">True</property>
-                        <property name="icon-name">emblem-favorite</property>
+                        <property name="can_focus">False</property>
+                        <property name="no_show_all">True</property>
+                        <property name="icon_name">emblem-favorite</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -1433,9 +1448,9 @@
                     </child>
                     <child>
                       <object class="GtkImage" id="ImagenTwoF14">
-                        <property name="can-focus">False</property>
-                        <property name="no-show-all">True</property>
-                        <property name="icon-name">applications-internet</property>
+                        <property name="can_focus">False</property>
+                        <property name="no_show_all">True</property>
+                        <property name="icon_name">applications-internet</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -1446,7 +1461,7 @@
                     <child>
                       <object class="GtkLabel" id="labelF14">
                         <property name="visible">True</property>
-                        <property name="can-focus">False</property>
+                        <property name="can_focus">False</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -1461,7 +1476,7 @@
             <child type="label">
               <object class="GtkLabel">
                 <property name="visible">True</property>
-                <property name="can-focus">False</property>
+                <property name="can_focus">False</property>
                 <attributes>
                   <attribute name="foreground" value="#6262a0a0eaea"/>
                 </attributes>
@@ -1475,27 +1490,27 @@
         </child>
         <child>
           <object class="GtkFrame" id="Frame15">
-            <property name="width-request">100</property>
-            <property name="height-request">100</property>
+            <property name="width_request">100</property>
+            <property name="height_request">100</property>
             <property name="visible">True</property>
-            <property name="can-focus">False</property>
-            <property name="label-xalign">0</property>
-            <property name="shadow-type">none</property>
+            <property name="can_focus">False</property>
+            <property name="label_xalign">0</property>
+            <property name="shadow_type">none</property>
             <child>
               <object class="GtkAlignment">
                 <property name="visible">True</property>
-                <property name="can-focus">False</property>
-                <property name="left-padding">12</property>
+                <property name="can_focus">False</property>
+                <property name="left_padding">12</property>
                 <child>
                   <object class="GtkBox">
                     <property name="visible">True</property>
-                    <property name="can-focus">False</property>
+                    <property name="can_focus">False</property>
                     <property name="orientation">vertical</property>
                     <child>
                       <object class="GtkImage" id="ImagenOneF15">
-                        <property name="can-focus">False</property>
-                        <property name="no-show-all">True</property>
-                        <property name="icon-name">emblem-favorite</property>
+                        <property name="can_focus">False</property>
+                        <property name="no_show_all">True</property>
+                        <property name="icon_name">emblem-favorite</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -1505,9 +1520,9 @@
                     </child>
                     <child>
                       <object class="GtkImage" id="ImagenTwoF15">
-                        <property name="can-focus">False</property>
-                        <property name="no-show-all">True</property>
-                        <property name="icon-name">applications-internet</property>
+                        <property name="can_focus">False</property>
+                        <property name="no_show_all">True</property>
+                        <property name="icon_name">applications-internet</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -1518,7 +1533,7 @@
                     <child>
                       <object class="GtkLabel" id="labelF15">
                         <property name="visible">True</property>
-                        <property name="can-focus">False</property>
+                        <property name="can_focus">False</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -1533,7 +1548,7 @@
             <child type="label">
               <object class="GtkLabel">
                 <property name="visible">True</property>
-                <property name="can-focus">False</property>
+                <property name="can_focus">False</property>
                 <attributes>
                   <attribute name="foreground" value="#6262a0a0eaea"/>
                 </attributes>
@@ -1547,27 +1562,27 @@
         </child>
         <child>
           <object class="GtkFrame" id="Frame16">
-            <property name="width-request">100</property>
-            <property name="height-request">100</property>
+            <property name="width_request">100</property>
+            <property name="height_request">100</property>
             <property name="visible">True</property>
-            <property name="can-focus">False</property>
-            <property name="label-xalign">0</property>
-            <property name="shadow-type">none</property>
+            <property name="can_focus">False</property>
+            <property name="label_xalign">0</property>
+            <property name="shadow_type">none</property>
             <child>
               <object class="GtkAlignment">
                 <property name="visible">True</property>
-                <property name="can-focus">False</property>
-                <property name="left-padding">12</property>
+                <property name="can_focus">False</property>
+                <property name="left_padding">12</property>
                 <child>
                   <object class="GtkBox">
                     <property name="visible">True</property>
-                    <property name="can-focus">False</property>
+                    <property name="can_focus">False</property>
                     <property name="orientation">vertical</property>
                     <child>
                       <object class="GtkImage" id="ImagenOneF16">
-                        <property name="can-focus">False</property>
-                        <property name="no-show-all">True</property>
-                        <property name="icon-name">emblem-favorite</property>
+                        <property name="can_focus">False</property>
+                        <property name="no_show_all">True</property>
+                        <property name="icon_name">emblem-favorite</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -1577,9 +1592,9 @@
                     </child>
                     <child>
                       <object class="GtkImage" id="ImagenTwoF16">
-                        <property name="can-focus">False</property>
-                        <property name="no-show-all">True</property>
-                        <property name="icon-name">applications-internet</property>
+                        <property name="can_focus">False</property>
+                        <property name="no_show_all">True</property>
+                        <property name="icon_name">applications-internet</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -1590,7 +1605,7 @@
                     <child>
                       <object class="GtkLabel" id="labelF16">
                         <property name="visible">True</property>
-                        <property name="can-focus">False</property>
+                        <property name="can_focus">False</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -1605,7 +1620,7 @@
             <child type="label">
               <object class="GtkLabel">
                 <property name="visible">True</property>
-                <property name="can-focus">False</property>
+                <property name="can_focus">False</property>
                 <attributes>
                   <attribute name="foreground" value="#6262a0a0eaea"/>
                 </attributes>
@@ -1619,27 +1634,27 @@
         </child>
         <child>
           <object class="GtkFrame" id="Frame17">
-            <property name="width-request">100</property>
-            <property name="height-request">100</property>
+            <property name="width_request">100</property>
+            <property name="height_request">100</property>
             <property name="visible">True</property>
-            <property name="can-focus">False</property>
-            <property name="label-xalign">0</property>
-            <property name="shadow-type">none</property>
+            <property name="can_focus">False</property>
+            <property name="label_xalign">0</property>
+            <property name="shadow_type">none</property>
             <child>
               <object class="GtkAlignment">
                 <property name="visible">True</property>
-                <property name="can-focus">False</property>
-                <property name="left-padding">12</property>
+                <property name="can_focus">False</property>
+                <property name="left_padding">12</property>
                 <child>
                   <object class="GtkBox">
                     <property name="visible">True</property>
-                    <property name="can-focus">False</property>
+                    <property name="can_focus">False</property>
                     <property name="orientation">vertical</property>
                     <child>
                       <object class="GtkImage" id="ImagenOneF17">
-                        <property name="can-focus">False</property>
-                        <property name="no-show-all">True</property>
-                        <property name="icon-name">emblem-favorite</property>
+                        <property name="can_focus">False</property>
+                        <property name="no_show_all">True</property>
+                        <property name="icon_name">emblem-favorite</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -1649,9 +1664,9 @@
                     </child>
                     <child>
                       <object class="GtkImage" id="ImagenTwoF17">
-                        <property name="can-focus">False</property>
-                        <property name="no-show-all">True</property>
-                        <property name="icon-name">applications-internet</property>
+                        <property name="can_focus">False</property>
+                        <property name="no_show_all">True</property>
+                        <property name="icon_name">applications-internet</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -1662,7 +1677,7 @@
                     <child>
                       <object class="GtkLabel" id="labelF17">
                         <property name="visible">True</property>
-                        <property name="can-focus">False</property>
+                        <property name="can_focus">False</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -1677,7 +1692,7 @@
             <child type="label">
               <object class="GtkLabel">
                 <property name="visible">True</property>
-                <property name="can-focus">False</property>
+                <property name="can_focus">False</property>
                 <attributes>
                   <attribute name="foreground" value="#6262a0a0eaea"/>
                 </attributes>
@@ -1691,27 +1706,27 @@
         </child>
         <child>
           <object class="GtkFrame" id="Frame18">
-            <property name="width-request">100</property>
-            <property name="height-request">100</property>
+            <property name="width_request">100</property>
+            <property name="height_request">100</property>
             <property name="visible">True</property>
-            <property name="can-focus">False</property>
-            <property name="label-xalign">0</property>
-            <property name="shadow-type">none</property>
+            <property name="can_focus">False</property>
+            <property name="label_xalign">0</property>
+            <property name="shadow_type">none</property>
             <child>
               <object class="GtkAlignment">
                 <property name="visible">True</property>
-                <property name="can-focus">False</property>
-                <property name="left-padding">12</property>
+                <property name="can_focus">False</property>
+                <property name="left_padding">12</property>
                 <child>
                   <object class="GtkBox">
                     <property name="visible">True</property>
-                    <property name="can-focus">False</property>
+                    <property name="can_focus">False</property>
                     <property name="orientation">vertical</property>
                     <child>
                       <object class="GtkImage" id="ImagenOneF18">
-                        <property name="can-focus">False</property>
-                        <property name="no-show-all">True</property>
-                        <property name="icon-name">emblem-favorite</property>
+                        <property name="can_focus">False</property>
+                        <property name="no_show_all">True</property>
+                        <property name="icon_name">emblem-favorite</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -1721,9 +1736,9 @@
                     </child>
                     <child>
                       <object class="GtkImage" id="ImagenTwoF18">
-                        <property name="can-focus">False</property>
-                        <property name="no-show-all">True</property>
-                        <property name="icon-name">applications-internet</property>
+                        <property name="can_focus">False</property>
+                        <property name="no_show_all">True</property>
+                        <property name="icon_name">applications-internet</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -1734,7 +1749,7 @@
                     <child>
                       <object class="GtkLabel" id="labelF18">
                         <property name="visible">True</property>
-                        <property name="can-focus">False</property>
+                        <property name="can_focus">False</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -1749,7 +1764,7 @@
             <child type="label">
               <object class="GtkLabel">
                 <property name="visible">True</property>
-                <property name="can-focus">False</property>
+                <property name="can_focus">False</property>
                 <attributes>
                   <attribute name="foreground" value="#6262a0a0eaea"/>
                 </attributes>
@@ -1763,27 +1778,27 @@
         </child>
         <child>
           <object class="GtkFrame" id="Frame19">
-            <property name="width-request">100</property>
-            <property name="height-request">100</property>
+            <property name="width_request">100</property>
+            <property name="height_request">100</property>
             <property name="visible">True</property>
-            <property name="can-focus">False</property>
-            <property name="label-xalign">0</property>
-            <property name="shadow-type">none</property>
+            <property name="can_focus">False</property>
+            <property name="label_xalign">0</property>
+            <property name="shadow_type">none</property>
             <child>
               <object class="GtkAlignment">
                 <property name="visible">True</property>
-                <property name="can-focus">False</property>
-                <property name="left-padding">12</property>
+                <property name="can_focus">False</property>
+                <property name="left_padding">12</property>
                 <child>
                   <object class="GtkBox">
                     <property name="visible">True</property>
-                    <property name="can-focus">False</property>
+                    <property name="can_focus">False</property>
                     <property name="orientation">vertical</property>
                     <child>
                       <object class="GtkImage" id="ImagenOneF19">
-                        <property name="can-focus">False</property>
-                        <property name="no-show-all">True</property>
-                        <property name="icon-name">emblem-favorite</property>
+                        <property name="can_focus">False</property>
+                        <property name="no_show_all">True</property>
+                        <property name="icon_name">emblem-favorite</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -1793,9 +1808,9 @@
                     </child>
                     <child>
                       <object class="GtkImage" id="ImagenTwoF19">
-                        <property name="can-focus">False</property>
-                        <property name="no-show-all">True</property>
-                        <property name="icon-name">applications-internet</property>
+                        <property name="can_focus">False</property>
+                        <property name="no_show_all">True</property>
+                        <property name="icon_name">applications-internet</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -1806,7 +1821,7 @@
                     <child>
                       <object class="GtkLabel" id="labelF19">
                         <property name="visible">True</property>
-                        <property name="can-focus">False</property>
+                        <property name="can_focus">False</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -1821,7 +1836,7 @@
             <child type="label">
               <object class="GtkLabel">
                 <property name="visible">True</property>
-                <property name="can-focus">False</property>
+                <property name="can_focus">False</property>
                 <attributes>
                   <attribute name="foreground" value="#6262a0a0eaea"/>
                 </attributes>
@@ -1835,27 +1850,27 @@
         </child>
         <child>
           <object class="GtkFrame" id="Frame20">
-            <property name="width-request">100</property>
-            <property name="height-request">100</property>
+            <property name="width_request">100</property>
+            <property name="height_request">100</property>
             <property name="visible">True</property>
-            <property name="can-focus">False</property>
-            <property name="label-xalign">0</property>
-            <property name="shadow-type">none</property>
+            <property name="can_focus">False</property>
+            <property name="label_xalign">0</property>
+            <property name="shadow_type">none</property>
             <child>
               <object class="GtkAlignment">
                 <property name="visible">True</property>
-                <property name="can-focus">False</property>
-                <property name="left-padding">12</property>
+                <property name="can_focus">False</property>
+                <property name="left_padding">12</property>
                 <child>
                   <object class="GtkBox">
                     <property name="visible">True</property>
-                    <property name="can-focus">False</property>
+                    <property name="can_focus">False</property>
                     <property name="orientation">vertical</property>
                     <child>
                       <object class="GtkImage" id="ImagenOneF20">
-                        <property name="can-focus">False</property>
-                        <property name="no-show-all">True</property>
-                        <property name="icon-name">emblem-favorite</property>
+                        <property name="can_focus">False</property>
+                        <property name="no_show_all">True</property>
+                        <property name="icon_name">emblem-favorite</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -1865,9 +1880,9 @@
                     </child>
                     <child>
                       <object class="GtkImage" id="ImagenTwoF20">
-                        <property name="can-focus">False</property>
-                        <property name="no-show-all">True</property>
-                        <property name="icon-name">applications-internet</property>
+                        <property name="can_focus">False</property>
+                        <property name="no_show_all">True</property>
+                        <property name="icon_name">applications-internet</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -1878,7 +1893,7 @@
                     <child>
                       <object class="GtkLabel" id="labelF20">
                         <property name="visible">True</property>
-                        <property name="can-focus">False</property>
+                        <property name="can_focus">False</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -1893,7 +1908,7 @@
             <child type="label">
               <object class="GtkLabel">
                 <property name="visible">True</property>
-                <property name="can-focus">False</property>
+                <property name="can_focus">False</property>
                 <attributes>
                   <attribute name="foreground" value="#6262a0a0eaea"/>
                 </attributes>
@@ -1907,27 +1922,27 @@
         </child>
         <child>
           <object class="GtkFrame" id="Frame21">
-            <property name="width-request">100</property>
-            <property name="height-request">100</property>
+            <property name="width_request">100</property>
+            <property name="height_request">100</property>
             <property name="visible">True</property>
-            <property name="can-focus">False</property>
-            <property name="label-xalign">0</property>
-            <property name="shadow-type">none</property>
+            <property name="can_focus">False</property>
+            <property name="label_xalign">0</property>
+            <property name="shadow_type">none</property>
             <child>
               <object class="GtkAlignment">
                 <property name="visible">True</property>
-                <property name="can-focus">False</property>
-                <property name="left-padding">12</property>
+                <property name="can_focus">False</property>
+                <property name="left_padding">12</property>
                 <child>
                   <object class="GtkBox">
                     <property name="visible">True</property>
-                    <property name="can-focus">False</property>
+                    <property name="can_focus">False</property>
                     <property name="orientation">vertical</property>
                     <child>
                       <object class="GtkImage" id="ImagenOneF21">
-                        <property name="can-focus">False</property>
-                        <property name="no-show-all">True</property>
-                        <property name="icon-name">emblem-favorite</property>
+                        <property name="can_focus">False</property>
+                        <property name="no_show_all">True</property>
+                        <property name="icon_name">emblem-favorite</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -1937,9 +1952,9 @@
                     </child>
                     <child>
                       <object class="GtkImage" id="ImagenTwoF21">
-                        <property name="can-focus">False</property>
-                        <property name="no-show-all">True</property>
-                        <property name="icon-name">applications-internet</property>
+                        <property name="can_focus">False</property>
+                        <property name="no_show_all">True</property>
+                        <property name="icon_name">applications-internet</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -1950,7 +1965,7 @@
                     <child>
                       <object class="GtkLabel" id="labelF21">
                         <property name="visible">True</property>
-                        <property name="can-focus">False</property>
+                        <property name="can_focus">False</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -1965,7 +1980,7 @@
             <child type="label">
               <object class="GtkLabel">
                 <property name="visible">True</property>
-                <property name="can-focus">False</property>
+                <property name="can_focus">False</property>
                 <attributes>
                   <attribute name="foreground" value="#6262a0a0eaea"/>
                 </attributes>
@@ -1979,27 +1994,27 @@
         </child>
         <child>
           <object class="GtkFrame" id="Frame22">
-            <property name="width-request">100</property>
-            <property name="height-request">100</property>
+            <property name="width_request">100</property>
+            <property name="height_request">100</property>
             <property name="visible">True</property>
-            <property name="can-focus">False</property>
-            <property name="label-xalign">0</property>
-            <property name="shadow-type">none</property>
+            <property name="can_focus">False</property>
+            <property name="label_xalign">0</property>
+            <property name="shadow_type">none</property>
             <child>
               <object class="GtkAlignment">
                 <property name="visible">True</property>
-                <property name="can-focus">False</property>
-                <property name="left-padding">12</property>
+                <property name="can_focus">False</property>
+                <property name="left_padding">12</property>
                 <child>
                   <object class="GtkBox">
                     <property name="visible">True</property>
-                    <property name="can-focus">False</property>
+                    <property name="can_focus">False</property>
                     <property name="orientation">vertical</property>
                     <child>
                       <object class="GtkImage" id="ImagenOneF22">
-                        <property name="can-focus">False</property>
-                        <property name="no-show-all">True</property>
-                        <property name="icon-name">emblem-favorite</property>
+                        <property name="can_focus">False</property>
+                        <property name="no_show_all">True</property>
+                        <property name="icon_name">emblem-favorite</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -2009,9 +2024,9 @@
                     </child>
                     <child>
                       <object class="GtkImage" id="ImagenTwoF22">
-                        <property name="can-focus">False</property>
-                        <property name="no-show-all">True</property>
-                        <property name="icon-name">applications-internet</property>
+                        <property name="can_focus">False</property>
+                        <property name="no_show_all">True</property>
+                        <property name="icon_name">applications-internet</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -2022,7 +2037,7 @@
                     <child>
                       <object class="GtkLabel" id="labelF22">
                         <property name="visible">True</property>
-                        <property name="can-focus">False</property>
+                        <property name="can_focus">False</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -2037,7 +2052,7 @@
             <child type="label">
               <object class="GtkLabel">
                 <property name="visible">True</property>
-                <property name="can-focus">False</property>
+                <property name="can_focus">False</property>
                 <attributes>
                   <attribute name="foreground" value="#6262a0a0eaea"/>
                 </attributes>
@@ -2051,27 +2066,27 @@
         </child>
         <child>
           <object class="GtkFrame" id="Frame23">
-            <property name="width-request">100</property>
-            <property name="height-request">100</property>
+            <property name="width_request">100</property>
+            <property name="height_request">100</property>
             <property name="visible">True</property>
-            <property name="can-focus">False</property>
-            <property name="label-xalign">0</property>
-            <property name="shadow-type">none</property>
+            <property name="can_focus">False</property>
+            <property name="label_xalign">0</property>
+            <property name="shadow_type">none</property>
             <child>
               <object class="GtkAlignment">
                 <property name="visible">True</property>
-                <property name="can-focus">False</property>
-                <property name="left-padding">12</property>
+                <property name="can_focus">False</property>
+                <property name="left_padding">12</property>
                 <child>
                   <object class="GtkBox">
                     <property name="visible">True</property>
-                    <property name="can-focus">False</property>
+                    <property name="can_focus">False</property>
                     <property name="orientation">vertical</property>
                     <child>
                       <object class="GtkImage" id="ImagenOneF23">
-                        <property name="can-focus">False</property>
-                        <property name="no-show-all">True</property>
-                        <property name="icon-name">emblem-favorite</property>
+                        <property name="can_focus">False</property>
+                        <property name="no_show_all">True</property>
+                        <property name="icon_name">emblem-favorite</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -2081,9 +2096,9 @@
                     </child>
                     <child>
                       <object class="GtkImage" id="ImagenTwoF23">
-                        <property name="can-focus">False</property>
-                        <property name="no-show-all">True</property>
-                        <property name="icon-name">applications-internet</property>
+                        <property name="can_focus">False</property>
+                        <property name="no_show_all">True</property>
+                        <property name="icon_name">applications-internet</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -2094,7 +2109,7 @@
                     <child>
                       <object class="GtkLabel" id="labelF23">
                         <property name="visible">True</property>
-                        <property name="can-focus">False</property>
+                        <property name="can_focus">False</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -2109,7 +2124,7 @@
             <child type="label">
               <object class="GtkLabel">
                 <property name="visible">True</property>
-                <property name="can-focus">False</property>
+                <property name="can_focus">False</property>
                 <attributes>
                   <attribute name="foreground" value="#6262a0a0eaea"/>
                 </attributes>
@@ -2123,27 +2138,27 @@
         </child>
         <child>
           <object class="GtkFrame" id="Frame24">
-            <property name="width-request">100</property>
-            <property name="height-request">100</property>
+            <property name="width_request">100</property>
+            <property name="height_request">100</property>
             <property name="visible">True</property>
-            <property name="can-focus">False</property>
-            <property name="label-xalign">0</property>
-            <property name="shadow-type">none</property>
+            <property name="can_focus">False</property>
+            <property name="label_xalign">0</property>
+            <property name="shadow_type">none</property>
             <child>
               <object class="GtkAlignment">
                 <property name="visible">True</property>
-                <property name="can-focus">False</property>
-                <property name="left-padding">12</property>
+                <property name="can_focus">False</property>
+                <property name="left_padding">12</property>
                 <child>
                   <object class="GtkBox">
                     <property name="visible">True</property>
-                    <property name="can-focus">False</property>
+                    <property name="can_focus">False</property>
                     <property name="orientation">vertical</property>
                     <child>
                       <object class="GtkImage" id="ImagenOneF24">
-                        <property name="can-focus">False</property>
-                        <property name="no-show-all">True</property>
-                        <property name="icon-name">emblem-favorite</property>
+                        <property name="can_focus">False</property>
+                        <property name="no_show_all">True</property>
+                        <property name="icon_name">emblem-favorite</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -2153,9 +2168,9 @@
                     </child>
                     <child>
                       <object class="GtkImage" id="ImagenTwoF24">
-                        <property name="can-focus">False</property>
-                        <property name="no-show-all">True</property>
-                        <property name="icon-name">applications-internet</property>
+                        <property name="can_focus">False</property>
+                        <property name="no_show_all">True</property>
+                        <property name="icon_name">applications-internet</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -2166,7 +2181,7 @@
                     <child>
                       <object class="GtkLabel" id="labelF24">
                         <property name="visible">True</property>
-                        <property name="can-focus">False</property>
+                        <property name="can_focus">False</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -2181,7 +2196,7 @@
             <child type="label">
               <object class="GtkLabel">
                 <property name="visible">True</property>
-                <property name="can-focus">False</property>
+                <property name="can_focus">False</property>
                 <attributes>
                   <attribute name="foreground" value="#6262a0a0eaea"/>
                 </attributes>
@@ -2195,27 +2210,27 @@
         </child>
         <child>
           <object class="GtkFrame" id="Frame25">
-            <property name="width-request">100</property>
-            <property name="height-request">100</property>
+            <property name="width_request">100</property>
+            <property name="height_request">100</property>
             <property name="visible">True</property>
-            <property name="can-focus">False</property>
-            <property name="label-xalign">0</property>
-            <property name="shadow-type">none</property>
+            <property name="can_focus">False</property>
+            <property name="label_xalign">0</property>
+            <property name="shadow_type">none</property>
             <child>
               <object class="GtkAlignment">
                 <property name="visible">True</property>
-                <property name="can-focus">False</property>
-                <property name="left-padding">12</property>
+                <property name="can_focus">False</property>
+                <property name="left_padding">12</property>
                 <child>
                   <object class="GtkBox">
                     <property name="visible">True</property>
-                    <property name="can-focus">False</property>
+                    <property name="can_focus">False</property>
                     <property name="orientation">vertical</property>
                     <child>
                       <object class="GtkImage" id="ImagenOneF25">
-                        <property name="can-focus">False</property>
-                        <property name="no-show-all">True</property>
-                        <property name="icon-name">emblem-favorite</property>
+                        <property name="can_focus">False</property>
+                        <property name="no_show_all">True</property>
+                        <property name="icon_name">emblem-favorite</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -2225,9 +2240,9 @@
                     </child>
                     <child>
                       <object class="GtkImage" id="ImagenTwoF25">
-                        <property name="can-focus">False</property>
-                        <property name="no-show-all">True</property>
-                        <property name="icon-name">applications-internet</property>
+                        <property name="can_focus">False</property>
+                        <property name="no_show_all">True</property>
+                        <property name="icon_name">applications-internet</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -2238,7 +2253,7 @@
                     <child>
                       <object class="GtkLabel" id="labelF25">
                         <property name="visible">True</property>
-                        <property name="can-focus">False</property>
+                        <property name="can_focus">False</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -2253,7 +2268,7 @@
             <child type="label">
               <object class="GtkLabel">
                 <property name="visible">True</property>
-                <property name="can-focus">False</property>
+                <property name="can_focus">False</property>
                 <attributes>
                   <attribute name="foreground" value="#6262a0a0eaea"/>
                 </attributes>
@@ -2267,27 +2282,27 @@
         </child>
         <child>
           <object class="GtkFrame" id="Frame26">
-            <property name="width-request">100</property>
-            <property name="height-request">100</property>
+            <property name="width_request">100</property>
+            <property name="height_request">100</property>
             <property name="visible">True</property>
-            <property name="can-focus">False</property>
-            <property name="label-xalign">0</property>
-            <property name="shadow-type">none</property>
+            <property name="can_focus">False</property>
+            <property name="label_xalign">0</property>
+            <property name="shadow_type">none</property>
             <child>
               <object class="GtkAlignment">
                 <property name="visible">True</property>
-                <property name="can-focus">False</property>
-                <property name="left-padding">12</property>
+                <property name="can_focus">False</property>
+                <property name="left_padding">12</property>
                 <child>
                   <object class="GtkBox">
                     <property name="visible">True</property>
-                    <property name="can-focus">False</property>
+                    <property name="can_focus">False</property>
                     <property name="orientation">vertical</property>
                     <child>
                       <object class="GtkImage" id="ImagenOneF26">
-                        <property name="can-focus">False</property>
-                        <property name="no-show-all">True</property>
-                        <property name="icon-name">emblem-favorite</property>
+                        <property name="can_focus">False</property>
+                        <property name="no_show_all">True</property>
+                        <property name="icon_name">emblem-favorite</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -2297,9 +2312,9 @@
                     </child>
                     <child>
                       <object class="GtkImage" id="ImagenTwoF26">
-                        <property name="can-focus">False</property>
-                        <property name="no-show-all">True</property>
-                        <property name="icon-name">applications-internet</property>
+                        <property name="can_focus">False</property>
+                        <property name="no_show_all">True</property>
+                        <property name="icon_name">applications-internet</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -2310,7 +2325,7 @@
                     <child>
                       <object class="GtkLabel" id="labelF26">
                         <property name="visible">True</property>
-                        <property name="can-focus">False</property>
+                        <property name="can_focus">False</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -2325,7 +2340,7 @@
             <child type="label">
               <object class="GtkLabel">
                 <property name="visible">True</property>
-                <property name="can-focus">False</property>
+                <property name="can_focus">False</property>
                 <attributes>
                   <attribute name="foreground" value="#6262a0a0eaea"/>
                 </attributes>
@@ -2339,27 +2354,27 @@
         </child>
         <child>
           <object class="GtkFrame" id="Frame27">
-            <property name="width-request">100</property>
-            <property name="height-request">100</property>
+            <property name="width_request">100</property>
+            <property name="height_request">100</property>
             <property name="visible">True</property>
-            <property name="can-focus">False</property>
-            <property name="label-xalign">0</property>
-            <property name="shadow-type">none</property>
+            <property name="can_focus">False</property>
+            <property name="label_xalign">0</property>
+            <property name="shadow_type">none</property>
             <child>
               <object class="GtkAlignment">
                 <property name="visible">True</property>
-                <property name="can-focus">False</property>
-                <property name="left-padding">12</property>
+                <property name="can_focus">False</property>
+                <property name="left_padding">12</property>
                 <child>
                   <object class="GtkBox">
                     <property name="visible">True</property>
-                    <property name="can-focus">False</property>
+                    <property name="can_focus">False</property>
                     <property name="orientation">vertical</property>
                     <child>
                       <object class="GtkImage" id="ImagenOneF27">
-                        <property name="can-focus">False</property>
-                        <property name="no-show-all">True</property>
-                        <property name="icon-name">emblem-favorite</property>
+                        <property name="can_focus">False</property>
+                        <property name="no_show_all">True</property>
+                        <property name="icon_name">emblem-favorite</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -2369,9 +2384,9 @@
                     </child>
                     <child>
                       <object class="GtkImage" id="ImagenTwoF27">
-                        <property name="can-focus">False</property>
-                        <property name="no-show-all">True</property>
-                        <property name="icon-name">applications-internet</property>
+                        <property name="can_focus">False</property>
+                        <property name="no_show_all">True</property>
+                        <property name="icon_name">applications-internet</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -2382,7 +2397,7 @@
                     <child>
                       <object class="GtkLabel" id="labelF27">
                         <property name="visible">True</property>
-                        <property name="can-focus">False</property>
+                        <property name="can_focus">False</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -2397,7 +2412,7 @@
             <child type="label">
               <object class="GtkLabel">
                 <property name="visible">True</property>
-                <property name="can-focus">False</property>
+                <property name="can_focus">False</property>
                 <attributes>
                   <attribute name="foreground" value="#6262a0a0eaea"/>
                 </attributes>
@@ -2411,27 +2426,27 @@
         </child>
         <child>
           <object class="GtkFrame" id="Frame28">
-            <property name="width-request">100</property>
-            <property name="height-request">100</property>
+            <property name="width_request">100</property>
+            <property name="height_request">100</property>
             <property name="visible">True</property>
-            <property name="can-focus">False</property>
-            <property name="label-xalign">0</property>
-            <property name="shadow-type">none</property>
+            <property name="can_focus">False</property>
+            <property name="label_xalign">0</property>
+            <property name="shadow_type">none</property>
             <child>
               <object class="GtkAlignment">
                 <property name="visible">True</property>
-                <property name="can-focus">False</property>
-                <property name="left-padding">12</property>
+                <property name="can_focus">False</property>
+                <property name="left_padding">12</property>
                 <child>
                   <object class="GtkBox">
                     <property name="visible">True</property>
-                    <property name="can-focus">False</property>
+                    <property name="can_focus">False</property>
                     <property name="orientation">vertical</property>
                     <child>
                       <object class="GtkImage" id="ImagenOneF28">
-                        <property name="can-focus">False</property>
-                        <property name="no-show-all">True</property>
-                        <property name="icon-name">emblem-favorite</property>
+                        <property name="can_focus">False</property>
+                        <property name="no_show_all">True</property>
+                        <property name="icon_name">emblem-favorite</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -2441,9 +2456,9 @@
                     </child>
                     <child>
                       <object class="GtkImage" id="ImagenTwoF28">
-                        <property name="can-focus">False</property>
-                        <property name="no-show-all">True</property>
-                        <property name="icon-name">applications-internet</property>
+                        <property name="can_focus">False</property>
+                        <property name="no_show_all">True</property>
+                        <property name="icon_name">applications-internet</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -2454,7 +2469,7 @@
                     <child>
                       <object class="GtkLabel" id="labelF28">
                         <property name="visible">True</property>
-                        <property name="can-focus">False</property>
+                        <property name="can_focus">False</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -2469,7 +2484,7 @@
             <child type="label">
               <object class="GtkLabel">
                 <property name="visible">True</property>
-                <property name="can-focus">False</property>
+                <property name="can_focus">False</property>
                 <attributes>
                   <attribute name="foreground" value="#6262a0a0eaea"/>
                 </attributes>
@@ -2483,27 +2498,27 @@
         </child>
         <child>
           <object class="GtkFrame" id="Frame29">
-            <property name="width-request">100</property>
-            <property name="height-request">100</property>
+            <property name="width_request">100</property>
+            <property name="height_request">100</property>
             <property name="visible">True</property>
-            <property name="can-focus">False</property>
-            <property name="label-xalign">0</property>
-            <property name="shadow-type">none</property>
+            <property name="can_focus">False</property>
+            <property name="label_xalign">0</property>
+            <property name="shadow_type">none</property>
             <child>
               <object class="GtkAlignment">
                 <property name="visible">True</property>
-                <property name="can-focus">False</property>
-                <property name="left-padding">12</property>
+                <property name="can_focus">False</property>
+                <property name="left_padding">12</property>
                 <child>
                   <object class="GtkBox">
                     <property name="visible">True</property>
-                    <property name="can-focus">False</property>
+                    <property name="can_focus">False</property>
                     <property name="orientation">vertical</property>
                     <child>
                       <object class="GtkImage" id="ImagenOneF29">
-                        <property name="can-focus">False</property>
-                        <property name="no-show-all">True</property>
-                        <property name="icon-name">emblem-favorite</property>
+                        <property name="can_focus">False</property>
+                        <property name="no_show_all">True</property>
+                        <property name="icon_name">emblem-favorite</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -2513,9 +2528,9 @@
                     </child>
                     <child>
                       <object class="GtkImage" id="ImagenTwoF29">
-                        <property name="can-focus">False</property>
-                        <property name="no-show-all">True</property>
-                        <property name="icon-name">applications-internet</property>
+                        <property name="can_focus">False</property>
+                        <property name="no_show_all">True</property>
+                        <property name="icon_name">applications-internet</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -2526,7 +2541,7 @@
                     <child>
                       <object class="GtkLabel" id="labelF29">
                         <property name="visible">True</property>
-                        <property name="can-focus">False</property>
+                        <property name="can_focus">False</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -2541,7 +2556,7 @@
             <child type="label">
               <object class="GtkLabel">
                 <property name="visible">True</property>
-                <property name="can-focus">False</property>
+                <property name="can_focus">False</property>
                 <attributes>
                   <attribute name="foreground" value="#6262a0a0eaea"/>
                 </attributes>
@@ -2555,27 +2570,27 @@
         </child>
         <child>
           <object class="GtkFrame" id="Frame30">
-            <property name="width-request">100</property>
-            <property name="height-request">100</property>
+            <property name="width_request">100</property>
+            <property name="height_request">100</property>
             <property name="visible">True</property>
-            <property name="can-focus">False</property>
-            <property name="label-xalign">0</property>
-            <property name="shadow-type">none</property>
+            <property name="can_focus">False</property>
+            <property name="label_xalign">0</property>
+            <property name="shadow_type">none</property>
             <child>
               <object class="GtkAlignment">
                 <property name="visible">True</property>
-                <property name="can-focus">False</property>
-                <property name="left-padding">12</property>
+                <property name="can_focus">False</property>
+                <property name="left_padding">12</property>
                 <child>
                   <object class="GtkBox">
                     <property name="visible">True</property>
-                    <property name="can-focus">False</property>
+                    <property name="can_focus">False</property>
                     <property name="orientation">vertical</property>
                     <child>
                       <object class="GtkImage" id="ImagenOneF30">
-                        <property name="can-focus">False</property>
-                        <property name="no-show-all">True</property>
-                        <property name="icon-name">emblem-favorite</property>
+                        <property name="can_focus">False</property>
+                        <property name="no_show_all">True</property>
+                        <property name="icon_name">emblem-favorite</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -2585,9 +2600,9 @@
                     </child>
                     <child>
                       <object class="GtkImage" id="ImagenTwoF30">
-                        <property name="can-focus">False</property>
-                        <property name="no-show-all">True</property>
-                        <property name="icon-name">applications-internet</property>
+                        <property name="can_focus">False</property>
+                        <property name="no_show_all">True</property>
+                        <property name="icon_name">applications-internet</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -2598,7 +2613,7 @@
                     <child>
                       <object class="GtkLabel" id="labelF30">
                         <property name="visible">True</property>
-                        <property name="can-focus">False</property>
+                        <property name="can_focus">False</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -2613,7 +2628,7 @@
             <child type="label">
               <object class="GtkLabel">
                 <property name="visible">True</property>
-                <property name="can-focus">False</property>
+                <property name="can_focus">False</property>
                 <attributes>
                   <attribute name="foreground" value="#6262a0a0eaea"/>
                 </attributes>
@@ -2627,27 +2642,27 @@
         </child>
         <child>
           <object class="GtkFrame" id="Frame31">
-            <property name="width-request">100</property>
-            <property name="height-request">100</property>
+            <property name="width_request">100</property>
+            <property name="height_request">100</property>
             <property name="visible">True</property>
-            <property name="can-focus">False</property>
-            <property name="label-xalign">0</property>
-            <property name="shadow-type">none</property>
+            <property name="can_focus">False</property>
+            <property name="label_xalign">0</property>
+            <property name="shadow_type">none</property>
             <child>
               <object class="GtkAlignment">
                 <property name="visible">True</property>
-                <property name="can-focus">False</property>
-                <property name="left-padding">12</property>
+                <property name="can_focus">False</property>
+                <property name="left_padding">12</property>
                 <child>
                   <object class="GtkBox">
                     <property name="visible">True</property>
-                    <property name="can-focus">False</property>
+                    <property name="can_focus">False</property>
                     <property name="orientation">vertical</property>
                     <child>
                       <object class="GtkImage" id="ImagenOneF31">
-                        <property name="can-focus">False</property>
-                        <property name="no-show-all">True</property>
-                        <property name="icon-name">emblem-favorite</property>
+                        <property name="can_focus">False</property>
+                        <property name="no_show_all">True</property>
+                        <property name="icon_name">emblem-favorite</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -2657,9 +2672,9 @@
                     </child>
                     <child>
                       <object class="GtkImage" id="ImagenTwoF31">
-                        <property name="can-focus">False</property>
-                        <property name="no-show-all">True</property>
-                        <property name="icon-name">applications-internet</property>
+                        <property name="can_focus">False</property>
+                        <property name="no_show_all">True</property>
+                        <property name="icon_name">applications-internet</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -2670,7 +2685,7 @@
                     <child>
                       <object class="GtkLabel" id="labelF31">
                         <property name="visible">True</property>
-                        <property name="can-focus">False</property>
+                        <property name="can_focus">False</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -2685,7 +2700,7 @@
             <child type="label">
               <object class="GtkLabel">
                 <property name="visible">True</property>
-                <property name="can-focus">False</property>
+                <property name="can_focus">False</property>
                 <attributes>
                   <attribute name="foreground" value="#6262a0a0eaea"/>
                 </attributes>
@@ -2699,27 +2714,27 @@
         </child>
         <child>
           <object class="GtkFrame" id="Frame32">
-            <property name="width-request">100</property>
-            <property name="height-request">100</property>
+            <property name="width_request">100</property>
+            <property name="height_request">100</property>
             <property name="visible">True</property>
-            <property name="can-focus">False</property>
-            <property name="label-xalign">0</property>
-            <property name="shadow-type">none</property>
+            <property name="can_focus">False</property>
+            <property name="label_xalign">0</property>
+            <property name="shadow_type">none</property>
             <child>
               <object class="GtkAlignment">
                 <property name="visible">True</property>
-                <property name="can-focus">False</property>
-                <property name="left-padding">12</property>
+                <property name="can_focus">False</property>
+                <property name="left_padding">12</property>
                 <child>
                   <object class="GtkBox">
                     <property name="visible">True</property>
-                    <property name="can-focus">False</property>
+                    <property name="can_focus">False</property>
                     <property name="orientation">vertical</property>
                     <child>
                       <object class="GtkImage" id="ImagenOneF32">
-                        <property name="can-focus">False</property>
-                        <property name="no-show-all">True</property>
-                        <property name="icon-name">emblem-favorite</property>
+                        <property name="can_focus">False</property>
+                        <property name="no_show_all">True</property>
+                        <property name="icon_name">emblem-favorite</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -2729,9 +2744,9 @@
                     </child>
                     <child>
                       <object class="GtkImage" id="ImagenTwoF32">
-                        <property name="can-focus">False</property>
-                        <property name="no-show-all">True</property>
-                        <property name="icon-name">applications-internet</property>
+                        <property name="can_focus">False</property>
+                        <property name="no_show_all">True</property>
+                        <property name="icon_name">applications-internet</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -2742,7 +2757,7 @@
                     <child>
                       <object class="GtkLabel" id="labelF32">
                         <property name="visible">True</property>
-                        <property name="can-focus">False</property>
+                        <property name="can_focus">False</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -2757,7 +2772,7 @@
             <child type="label">
               <object class="GtkLabel">
                 <property name="visible">True</property>
-                <property name="can-focus">False</property>
+                <property name="can_focus">False</property>
                 <attributes>
                   <attribute name="foreground" value="#6262a0a0eaea"/>
                 </attributes>
@@ -2771,27 +2786,27 @@
         </child>
         <child>
           <object class="GtkFrame" id="Frame33">
-            <property name="width-request">100</property>
-            <property name="height-request">100</property>
+            <property name="width_request">100</property>
+            <property name="height_request">100</property>
             <property name="visible">True</property>
-            <property name="can-focus">False</property>
-            <property name="label-xalign">0</property>
-            <property name="shadow-type">none</property>
+            <property name="can_focus">False</property>
+            <property name="label_xalign">0</property>
+            <property name="shadow_type">none</property>
             <child>
               <object class="GtkAlignment">
                 <property name="visible">True</property>
-                <property name="can-focus">False</property>
-                <property name="left-padding">12</property>
+                <property name="can_focus">False</property>
+                <property name="left_padding">12</property>
                 <child>
                   <object class="GtkBox">
                     <property name="visible">True</property>
-                    <property name="can-focus">False</property>
+                    <property name="can_focus">False</property>
                     <property name="orientation">vertical</property>
                     <child>
                       <object class="GtkImage" id="ImagenOneF33">
-                        <property name="can-focus">False</property>
-                        <property name="no-show-all">True</property>
-                        <property name="icon-name">emblem-favorite</property>
+                        <property name="can_focus">False</property>
+                        <property name="no_show_all">True</property>
+                        <property name="icon_name">emblem-favorite</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -2801,9 +2816,9 @@
                     </child>
                     <child>
                       <object class="GtkImage" id="ImagenTwoF33">
-                        <property name="can-focus">False</property>
-                        <property name="no-show-all">True</property>
-                        <property name="icon-name">applications-internet</property>
+                        <property name="can_focus">False</property>
+                        <property name="no_show_all">True</property>
+                        <property name="icon_name">applications-internet</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -2814,7 +2829,7 @@
                     <child>
                       <object class="GtkLabel" id="labelF33">
                         <property name="visible">True</property>
-                        <property name="can-focus">False</property>
+                        <property name="can_focus">False</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -2829,7 +2844,7 @@
             <child type="label">
               <object class="GtkLabel">
                 <property name="visible">True</property>
-                <property name="can-focus">False</property>
+                <property name="can_focus">False</property>
                 <attributes>
                   <attribute name="foreground" value="#6262a0a0eaea"/>
                 </attributes>
@@ -2843,27 +2858,27 @@
         </child>
         <child>
           <object class="GtkFrame" id="Frame34">
-            <property name="width-request">100</property>
-            <property name="height-request">100</property>
+            <property name="width_request">100</property>
+            <property name="height_request">100</property>
             <property name="visible">True</property>
-            <property name="can-focus">False</property>
-            <property name="label-xalign">0</property>
-            <property name="shadow-type">none</property>
+            <property name="can_focus">False</property>
+            <property name="label_xalign">0</property>
+            <property name="shadow_type">none</property>
             <child>
               <object class="GtkAlignment">
                 <property name="visible">True</property>
-                <property name="can-focus">False</property>
-                <property name="left-padding">12</property>
+                <property name="can_focus">False</property>
+                <property name="left_padding">12</property>
                 <child>
                   <object class="GtkBox">
                     <property name="visible">True</property>
-                    <property name="can-focus">False</property>
+                    <property name="can_focus">False</property>
                     <property name="orientation">vertical</property>
                     <child>
                       <object class="GtkImage" id="ImagenOneF34">
-                        <property name="can-focus">False</property>
-                        <property name="no-show-all">True</property>
-                        <property name="icon-name">emblem-favorite</property>
+                        <property name="can_focus">False</property>
+                        <property name="no_show_all">True</property>
+                        <property name="icon_name">emblem-favorite</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -2873,9 +2888,9 @@
                     </child>
                     <child>
                       <object class="GtkImage" id="ImagenTwoF34">
-                        <property name="can-focus">False</property>
-                        <property name="no-show-all">True</property>
-                        <property name="icon-name">applications-internet</property>
+                        <property name="can_focus">False</property>
+                        <property name="no_show_all">True</property>
+                        <property name="icon_name">applications-internet</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -2886,7 +2901,7 @@
                     <child>
                       <object class="GtkLabel" id="labelF34">
                         <property name="visible">True</property>
-                        <property name="can-focus">False</property>
+                        <property name="can_focus">False</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -2901,7 +2916,7 @@
             <child type="label">
               <object class="GtkLabel">
                 <property name="visible">True</property>
-                <property name="can-focus">False</property>
+                <property name="can_focus">False</property>
                 <attributes>
                   <attribute name="foreground" value="#6262a0a0eaea"/>
                 </attributes>
@@ -2915,27 +2930,27 @@
         </child>
         <child>
           <object class="GtkFrame" id="Frame35">
-            <property name="width-request">100</property>
-            <property name="height-request">100</property>
+            <property name="width_request">100</property>
+            <property name="height_request">100</property>
             <property name="visible">True</property>
-            <property name="can-focus">False</property>
-            <property name="label-xalign">0</property>
-            <property name="shadow-type">none</property>
+            <property name="can_focus">False</property>
+            <property name="label_xalign">0</property>
+            <property name="shadow_type">none</property>
             <child>
               <object class="GtkAlignment">
                 <property name="visible">True</property>
-                <property name="can-focus">False</property>
-                <property name="left-padding">12</property>
+                <property name="can_focus">False</property>
+                <property name="left_padding">12</property>
                 <child>
                   <object class="GtkBox">
                     <property name="visible">True</property>
-                    <property name="can-focus">False</property>
+                    <property name="can_focus">False</property>
                     <property name="orientation">vertical</property>
                     <child>
                       <object class="GtkImage" id="ImagenOneF35">
-                        <property name="can-focus">False</property>
-                        <property name="no-show-all">True</property>
-                        <property name="icon-name">emblem-favorite</property>
+                        <property name="can_focus">False</property>
+                        <property name="no_show_all">True</property>
+                        <property name="icon_name">emblem-favorite</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -2945,9 +2960,9 @@
                     </child>
                     <child>
                       <object class="GtkImage" id="ImagenTwoF35">
-                        <property name="can-focus">False</property>
-                        <property name="no-show-all">True</property>
-                        <property name="icon-name">applications-internet</property>
+                        <property name="can_focus">False</property>
+                        <property name="no_show_all">True</property>
+                        <property name="icon_name">applications-internet</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -2958,7 +2973,7 @@
                     <child>
                       <object class="GtkLabel" id="labelF35">
                         <property name="visible">True</property>
-                        <property name="can-focus">False</property>
+                        <property name="can_focus">False</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -2973,7 +2988,7 @@
             <child type="label">
               <object class="GtkLabel">
                 <property name="visible">True</property>
-                <property name="can-focus">False</property>
+                <property name="can_focus">False</property>
                 <attributes>
                   <attribute name="foreground" value="#6262a0a0eaea"/>
                 </attributes>
@@ -2987,27 +3002,27 @@
         </child>
         <child>
           <object class="GtkFrame" id="Frame36">
-            <property name="width-request">100</property>
-            <property name="height-request">100</property>
+            <property name="width_request">100</property>
+            <property name="height_request">100</property>
             <property name="visible">True</property>
-            <property name="can-focus">False</property>
-            <property name="label-xalign">0</property>
-            <property name="shadow-type">none</property>
+            <property name="can_focus">False</property>
+            <property name="label_xalign">0</property>
+            <property name="shadow_type">none</property>
             <child>
               <object class="GtkAlignment">
                 <property name="visible">True</property>
-                <property name="can-focus">False</property>
-                <property name="left-padding">12</property>
+                <property name="can_focus">False</property>
+                <property name="left_padding">12</property>
                 <child>
                   <object class="GtkBox">
                     <property name="visible">True</property>
-                    <property name="can-focus">False</property>
+                    <property name="can_focus">False</property>
                     <property name="orientation">vertical</property>
                     <child>
                       <object class="GtkImage" id="ImagenOneF36">
-                        <property name="can-focus">False</property>
-                        <property name="no-show-all">True</property>
-                        <property name="icon-name">emblem-favorite</property>
+                        <property name="can_focus">False</property>
+                        <property name="no_show_all">True</property>
+                        <property name="icon_name">emblem-favorite</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -3017,9 +3032,9 @@
                     </child>
                     <child>
                       <object class="GtkImage" id="ImagenTwoF36">
-                        <property name="can-focus">False</property>
-                        <property name="no-show-all">True</property>
-                        <property name="icon-name">applications-internet</property>
+                        <property name="can_focus">False</property>
+                        <property name="no_show_all">True</property>
+                        <property name="icon_name">applications-internet</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -3030,7 +3045,7 @@
                     <child>
                       <object class="GtkLabel" id="labelF36">
                         <property name="visible">True</property>
-                        <property name="can-focus">False</property>
+                        <property name="can_focus">False</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -3045,7 +3060,7 @@
             <child type="label">
               <object class="GtkLabel">
                 <property name="visible">True</property>
-                <property name="can-focus">False</property>
+                <property name="can_focus">False</property>
                 <attributes>
                   <attribute name="foreground" value="#6262a0a0eaea"/>
                 </attributes>
@@ -3059,27 +3074,27 @@
         </child>
         <child>
           <object class="GtkFrame" id="Frame37">
-            <property name="width-request">100</property>
-            <property name="height-request">100</property>
+            <property name="width_request">100</property>
+            <property name="height_request">100</property>
             <property name="visible">True</property>
-            <property name="can-focus">False</property>
-            <property name="label-xalign">0</property>
-            <property name="shadow-type">none</property>
+            <property name="can_focus">False</property>
+            <property name="label_xalign">0</property>
+            <property name="shadow_type">none</property>
             <child>
               <object class="GtkAlignment">
                 <property name="visible">True</property>
-                <property name="can-focus">False</property>
-                <property name="left-padding">12</property>
+                <property name="can_focus">False</property>
+                <property name="left_padding">12</property>
                 <child>
                   <object class="GtkBox">
                     <property name="visible">True</property>
-                    <property name="can-focus">False</property>
+                    <property name="can_focus">False</property>
                     <property name="orientation">vertical</property>
                     <child>
                       <object class="GtkImage" id="ImagenOneF37">
-                        <property name="can-focus">False</property>
-                        <property name="no-show-all">True</property>
-                        <property name="icon-name">emblem-favorite</property>
+                        <property name="can_focus">False</property>
+                        <property name="no_show_all">True</property>
+                        <property name="icon_name">emblem-favorite</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -3089,9 +3104,9 @@
                     </child>
                     <child>
                       <object class="GtkImage" id="ImagenTwoF37">
-                        <property name="can-focus">False</property>
-                        <property name="no-show-all">True</property>
-                        <property name="icon-name">applications-internet</property>
+                        <property name="can_focus">False</property>
+                        <property name="no_show_all">True</property>
+                        <property name="icon_name">applications-internet</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -3102,7 +3117,7 @@
                     <child>
                       <object class="GtkLabel" id="labelF37">
                         <property name="visible">True</property>
-                        <property name="can-focus">False</property>
+                        <property name="can_focus">False</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -3117,7 +3132,7 @@
             <child type="label">
               <object class="GtkLabel">
                 <property name="visible">True</property>
-                <property name="can-focus">False</property>
+                <property name="can_focus">False</property>
                 <attributes>
                   <attribute name="foreground" value="#6262a0a0eaea"/>
                 </attributes>
@@ -3132,11 +3147,11 @@
         <child>
           <object class="GtkButton" id="Dado">
             <property name="label" translatable="yes">Lanzar Dado</property>
-            <property name="width-request">-1</property>
-            <property name="height-request">-1</property>
+            <property name="width_request">-1</property>
+            <property name="height_request">-1</property>
             <property name="visible">True</property>
-            <property name="can-focus">True</property>
-            <property name="receives-default">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
           </object>
           <packing>
             <property name="x">550</property>
@@ -3145,10 +3160,10 @@
         </child>
         <child>
           <object class="GtkLabel" id="DadoLabel">
-            <property name="width-request">-1</property>
-            <property name="height-request">-1</property>
+            <property name="width_request">-1</property>
+            <property name="height_request">-1</property>
             <property name="visible">True</property>
-            <property name="can-focus">False</property>
+            <property name="can_focus">False</property>
             <property name="label" translatable="yes">0</property>
             <attributes>
               <attribute name="font-desc" value="Sans Bold 14"/>
@@ -3162,27 +3177,27 @@
         </child>
         <child>
           <object class="GtkFrame" id="Frame38">
-            <property name="width-request">100</property>
-            <property name="height-request">100</property>
+            <property name="width_request">100</property>
+            <property name="height_request">100</property>
             <property name="visible">True</property>
-            <property name="can-focus">False</property>
-            <property name="label-xalign">0</property>
-            <property name="shadow-type">none</property>
+            <property name="can_focus">False</property>
+            <property name="label_xalign">0</property>
+            <property name="shadow_type">none</property>
             <child>
               <object class="GtkAlignment">
                 <property name="visible">True</property>
-                <property name="can-focus">False</property>
-                <property name="left-padding">12</property>
+                <property name="can_focus">False</property>
+                <property name="left_padding">12</property>
                 <child>
                   <object class="GtkBox">
                     <property name="visible">True</property>
-                    <property name="can-focus">False</property>
+                    <property name="can_focus">False</property>
                     <property name="orientation">vertical</property>
                     <child>
                       <object class="GtkImage" id="ImagenOneF38">
-                        <property name="can-focus">False</property>
-                        <property name="no-show-all">True</property>
-                        <property name="icon-name">emblem-favorite</property>
+                        <property name="can_focus">False</property>
+                        <property name="no_show_all">True</property>
+                        <property name="icon_name">emblem-favorite</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -3192,9 +3207,9 @@
                     </child>
                     <child>
                       <object class="GtkImage" id="ImagenTwoF38">
-                        <property name="can-focus">False</property>
-                        <property name="no-show-all">True</property>
-                        <property name="icon-name">applications-internet</property>
+                        <property name="can_focus">False</property>
+                        <property name="no_show_all">True</property>
+                        <property name="icon_name">applications-internet</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -3205,7 +3220,7 @@
                     <child>
                       <object class="GtkLabel" id="labelF38">
                         <property name="visible">True</property>
-                        <property name="can-focus">False</property>
+                        <property name="can_focus">False</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -3220,7 +3235,7 @@
             <child type="label">
               <object class="GtkLabel">
                 <property name="visible">True</property>
-                <property name="can-focus">False</property>
+                <property name="can_focus">False</property>
                 <attributes>
                   <attribute name="foreground" value="#6262a0a0eaea"/>
                 </attributes>
@@ -3234,27 +3249,27 @@
         </child>
         <child>
           <object class="GtkFrame" id="Frame39">
-            <property name="width-request">100</property>
-            <property name="height-request">100</property>
+            <property name="width_request">100</property>
+            <property name="height_request">100</property>
             <property name="visible">True</property>
-            <property name="can-focus">False</property>
-            <property name="label-xalign">0</property>
-            <property name="shadow-type">none</property>
+            <property name="can_focus">False</property>
+            <property name="label_xalign">0</property>
+            <property name="shadow_type">none</property>
             <child>
               <object class="GtkAlignment">
                 <property name="visible">True</property>
-                <property name="can-focus">False</property>
-                <property name="left-padding">12</property>
+                <property name="can_focus">False</property>
+                <property name="left_padding">12</property>
                 <child>
                   <object class="GtkBox">
                     <property name="visible">True</property>
-                    <property name="can-focus">False</property>
+                    <property name="can_focus">False</property>
                     <property name="orientation">vertical</property>
                     <child>
                       <object class="GtkImage" id="ImagenOneF39">
-                        <property name="can-focus">False</property>
-                        <property name="no-show-all">True</property>
-                        <property name="icon-name">emblem-favorite</property>
+                        <property name="can_focus">False</property>
+                        <property name="no_show_all">True</property>
+                        <property name="icon_name">emblem-favorite</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -3264,9 +3279,9 @@
                     </child>
                     <child>
                       <object class="GtkImage" id="ImagenTwoF39">
-                        <property name="can-focus">False</property>
-                        <property name="no-show-all">True</property>
-                        <property name="icon-name">applications-internet</property>
+                        <property name="can_focus">False</property>
+                        <property name="no_show_all">True</property>
+                        <property name="icon_name">applications-internet</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -3277,7 +3292,7 @@
                     <child>
                       <object class="GtkLabel" id="labelF39">
                         <property name="visible">True</property>
-                        <property name="can-focus">False</property>
+                        <property name="can_focus">False</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -3292,7 +3307,7 @@
             <child type="label">
               <object class="GtkLabel">
                 <property name="visible">True</property>
-                <property name="can-focus">False</property>
+                <property name="can_focus">False</property>
                 <attributes>
                   <attribute name="foreground" value="#6262a0a0eaea"/>
                 </attributes>
@@ -3306,27 +3321,27 @@
         </child>
         <child>
           <object class="GtkFrame" id="Frame40">
-            <property name="width-request">100</property>
-            <property name="height-request">100</property>
+            <property name="width_request">100</property>
+            <property name="height_request">100</property>
             <property name="visible">True</property>
-            <property name="can-focus">False</property>
-            <property name="label-xalign">0</property>
-            <property name="shadow-type">none</property>
+            <property name="can_focus">False</property>
+            <property name="label_xalign">0</property>
+            <property name="shadow_type">none</property>
             <child>
               <object class="GtkAlignment">
                 <property name="visible">True</property>
-                <property name="can-focus">False</property>
-                <property name="left-padding">12</property>
+                <property name="can_focus">False</property>
+                <property name="left_padding">12</property>
                 <child>
                   <object class="GtkBox">
                     <property name="visible">True</property>
-                    <property name="can-focus">False</property>
+                    <property name="can_focus">False</property>
                     <property name="orientation">vertical</property>
                     <child>
                       <object class="GtkImage" id="ImagenOneF40">
-                        <property name="can-focus">False</property>
-                        <property name="no-show-all">True</property>
-                        <property name="icon-name">emblem-favorite</property>
+                        <property name="can_focus">False</property>
+                        <property name="no_show_all">True</property>
+                        <property name="icon_name">emblem-favorite</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -3336,9 +3351,9 @@
                     </child>
                     <child>
                       <object class="GtkImage" id="ImagenTwoF40">
-                        <property name="can-focus">False</property>
-                        <property name="no-show-all">True</property>
-                        <property name="icon-name">applications-internet</property>
+                        <property name="can_focus">False</property>
+                        <property name="no_show_all">True</property>
+                        <property name="icon_name">applications-internet</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -3349,7 +3364,7 @@
                     <child>
                       <object class="GtkLabel" id="labelF40">
                         <property name="visible">True</property>
-                        <property name="can-focus">False</property>
+                        <property name="can_focus">False</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -3364,7 +3379,7 @@
             <child type="label">
               <object class="GtkLabel">
                 <property name="visible">True</property>
-                <property name="can-focus">False</property>
+                <property name="can_focus">False</property>
                 <attributes>
                   <attribute name="foreground" value="#6262a0a0eaea"/>
                 </attributes>
@@ -3378,27 +3393,27 @@
         </child>
         <child>
           <object class="GtkFrame" id="Frame41">
-            <property name="width-request">100</property>
-            <property name="height-request">100</property>
+            <property name="width_request">100</property>
+            <property name="height_request">100</property>
             <property name="visible">True</property>
-            <property name="can-focus">False</property>
-            <property name="label-xalign">0</property>
-            <property name="shadow-type">none</property>
+            <property name="can_focus">False</property>
+            <property name="label_xalign">0</property>
+            <property name="shadow_type">none</property>
             <child>
               <object class="GtkAlignment">
                 <property name="visible">True</property>
-                <property name="can-focus">False</property>
-                <property name="left-padding">12</property>
+                <property name="can_focus">False</property>
+                <property name="left_padding">12</property>
                 <child>
                   <object class="GtkBox">
                     <property name="visible">True</property>
-                    <property name="can-focus">False</property>
+                    <property name="can_focus">False</property>
                     <property name="orientation">vertical</property>
                     <child>
                       <object class="GtkImage" id="ImagenOneF41">
-                        <property name="can-focus">False</property>
-                        <property name="no-show-all">True</property>
-                        <property name="icon-name">emblem-favorite</property>
+                        <property name="can_focus">False</property>
+                        <property name="no_show_all">True</property>
+                        <property name="icon_name">emblem-favorite</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -3408,9 +3423,9 @@
                     </child>
                     <child>
                       <object class="GtkImage" id="ImagenTwoF41">
-                        <property name="can-focus">False</property>
-                        <property name="no-show-all">True</property>
-                        <property name="icon-name">applications-internet</property>
+                        <property name="can_focus">False</property>
+                        <property name="no_show_all">True</property>
+                        <property name="icon_name">applications-internet</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -3421,7 +3436,7 @@
                     <child>
                       <object class="GtkLabel" id="labelF41">
                         <property name="visible">True</property>
-                        <property name="can-focus">False</property>
+                        <property name="can_focus">False</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -3436,7 +3451,7 @@
             <child type="label">
               <object class="GtkLabel">
                 <property name="visible">True</property>
-                <property name="can-focus">False</property>
+                <property name="can_focus">False</property>
                 <attributes>
                   <attribute name="foreground" value="#6262a0a0eaea"/>
                 </attributes>
@@ -3450,27 +3465,27 @@
         </child>
         <child>
           <object class="GtkFrame" id="Frame42">
-            <property name="width-request">100</property>
-            <property name="height-request">100</property>
+            <property name="width_request">100</property>
+            <property name="height_request">100</property>
             <property name="visible">True</property>
-            <property name="can-focus">False</property>
-            <property name="label-xalign">0</property>
-            <property name="shadow-type">none</property>
+            <property name="can_focus">False</property>
+            <property name="label_xalign">0</property>
+            <property name="shadow_type">none</property>
             <child>
               <object class="GtkAlignment">
                 <property name="visible">True</property>
-                <property name="can-focus">False</property>
-                <property name="left-padding">12</property>
+                <property name="can_focus">False</property>
+                <property name="left_padding">12</property>
                 <child>
                   <object class="GtkBox">
                     <property name="visible">True</property>
-                    <property name="can-focus">False</property>
+                    <property name="can_focus">False</property>
                     <property name="orientation">vertical</property>
                     <child>
                       <object class="GtkImage" id="ImagenOneF42">
-                        <property name="can-focus">False</property>
-                        <property name="no-show-all">True</property>
-                        <property name="icon-name">emblem-favorite</property>
+                        <property name="can_focus">False</property>
+                        <property name="no_show_all">True</property>
+                        <property name="icon_name">emblem-favorite</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -3480,9 +3495,9 @@
                     </child>
                     <child>
                       <object class="GtkImage" id="ImagenTwoF42">
-                        <property name="can-focus">False</property>
-                        <property name="no-show-all">True</property>
-                        <property name="icon-name">applications-internet</property>
+                        <property name="can_focus">False</property>
+                        <property name="no_show_all">True</property>
+                        <property name="icon_name">applications-internet</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -3493,7 +3508,7 @@
                     <child>
                       <object class="GtkLabel" id="labelF42">
                         <property name="visible">True</property>
-                        <property name="can-focus">False</property>
+                        <property name="can_focus">False</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -3508,7 +3523,7 @@
             <child type="label">
               <object class="GtkLabel">
                 <property name="visible">True</property>
-                <property name="can-focus">False</property>
+                <property name="can_focus">False</property>
                 <attributes>
                   <attribute name="foreground" value="#6262a0a0eaea"/>
                 </attributes>
@@ -3522,27 +3537,27 @@
         </child>
         <child>
           <object class="GtkFrame" id="Frame43">
-            <property name="width-request">100</property>
-            <property name="height-request">100</property>
+            <property name="width_request">100</property>
+            <property name="height_request">100</property>
             <property name="visible">True</property>
-            <property name="can-focus">False</property>
-            <property name="label-xalign">0</property>
-            <property name="shadow-type">none</property>
+            <property name="can_focus">False</property>
+            <property name="label_xalign">0</property>
+            <property name="shadow_type">none</property>
             <child>
               <object class="GtkAlignment">
                 <property name="visible">True</property>
-                <property name="can-focus">False</property>
-                <property name="left-padding">12</property>
+                <property name="can_focus">False</property>
+                <property name="left_padding">12</property>
                 <child>
                   <object class="GtkBox">
                     <property name="visible">True</property>
-                    <property name="can-focus">False</property>
+                    <property name="can_focus">False</property>
                     <property name="orientation">vertical</property>
                     <child>
                       <object class="GtkImage" id="ImagenOneF43">
-                        <property name="can-focus">False</property>
-                        <property name="no-show-all">True</property>
-                        <property name="icon-name">emblem-favorite</property>
+                        <property name="can_focus">False</property>
+                        <property name="no_show_all">True</property>
+                        <property name="icon_name">emblem-favorite</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -3552,9 +3567,9 @@
                     </child>
                     <child>
                       <object class="GtkImage" id="ImagenTwoF43">
-                        <property name="can-focus">False</property>
-                        <property name="no-show-all">True</property>
-                        <property name="icon-name">applications-internet</property>
+                        <property name="can_focus">False</property>
+                        <property name="no_show_all">True</property>
+                        <property name="icon_name">applications-internet</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -3565,7 +3580,7 @@
                     <child>
                       <object class="GtkLabel" id="labelF43">
                         <property name="visible">True</property>
-                        <property name="can-focus">False</property>
+                        <property name="can_focus">False</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -3580,7 +3595,7 @@
             <child type="label">
               <object class="GtkLabel">
                 <property name="visible">True</property>
-                <property name="can-focus">False</property>
+                <property name="can_focus">False</property>
                 <attributes>
                   <attribute name="foreground" value="#6262a0a0eaea"/>
                 </attributes>
@@ -3590,6 +3605,133 @@
           <packing>
             <property name="x">300</property>
             <property name="y">400</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+  <object class="GtkDialog" id="registrarWin">
+    <property name="can_focus">False</property>
+    <property name="resizable">False</property>
+    <property name="type_hint">dialog</property>
+    <child type="titlebar">
+      <placeholder/>
+    </child>
+    <child internal-child="vbox">
+      <object class="GtkBox">
+        <property name="can_focus">False</property>
+        <property name="orientation">vertical</property>
+        <property name="spacing">2</property>
+        <child internal-child="action_area">
+          <object class="GtkButtonBox">
+            <property name="can_focus">False</property>
+            <property name="layout_style">end</property>
+            <child>
+              <object class="GtkButton" id="aceptarRegistrar">
+                <property name="label" translatable="yes">Registrar</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">True</property>
+              </object>
+              <packing>
+                <property name="expand">True</property>
+                <property name="fill">True</property>
+                <property name="position">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="cancelarRegistrar">
+                <property name="label" translatable="yes">Cancelar</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">True</property>
+              </object>
+              <packing>
+                <property name="expand">True</property>
+                <property name="fill">True</property>
+                <property name="position">1</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">False</property>
+            <property name="position">0</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkFixed">
+            <property name="width_request">100</property>
+            <property name="height_request">200</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="margin_bottom">4</property>
+            <child>
+              <object class="GtkLabel">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="label" translatable="yes">Nombre Usuario</property>
+                <attributes>
+                  <attribute name="font-desc" value="Sans Bold 10"/>
+                </attributes>
+              </object>
+              <packing>
+                <property name="x">20</property>
+                <property name="y">50</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkLabel">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="label" translatable="yes">ID Usuario</property>
+                <attributes>
+                  <attribute name="font-desc" value="Sans Bold 10"/>
+                </attributes>
+              </object>
+              <packing>
+                <property name="x">20</property>
+                <property name="y">120</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkEntry" id="nombreRegistro">
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+              </object>
+              <packing>
+                <property name="x">160</property>
+                <property name="y">50</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkEntry" id="idRegistro">
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+              </object>
+              <packing>
+                <property name="x">160</property>
+                <property name="y">120</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkLabel">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="label" translatable="yes">Registro de Jugador</property>
+                <attributes>
+                  <attribute name="font-desc" value="Sans Bold 12"/>
+                </attributes>
+              </object>
+              <packing>
+                <property name="x">85</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">1</property>
           </packing>
         </child>
       </object>
